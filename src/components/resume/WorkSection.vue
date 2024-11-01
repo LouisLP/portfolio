@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { OhVueIcon, addIcons } from 'oh-vue-icons'
+import { MdWorkoutlineRound } from 'oh-vue-icons/icons/md'
+
+addIcons(MdWorkoutlineRound)
+
 interface Job {
   company: string
   role: string
@@ -30,20 +35,12 @@ const getImagePath = (filename: string) => `@/assets/icons/${filename}`
 
 <template>
   <div>
+    <!-- "Work" header -->
     <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="48"
-        viewBox="0 -960 960 960"
-        width="48"
-        class="h-6 w-6 flex-none dark:fill-zinc-400"
-      >
-        <path
-          d="M140-120q-24 0-42-18t-18-42v-480q0-24 18-42t42-18h180v-100q0-24 18-42t42-18h200q24 0 42 18t18 42v100h180q24 0 42 18t18 42v480q0 24-18 42t-42 18H140Zm0-60h680v-480H140v480Zm240-540h200v-100H380v100ZM140-180v-480 480Z"
-        />
-      </svg>
+      <OhVueIcon name="md-workoutline-round" class="dark:text-zinc-400" />
       <span class="ml-3">Work</span>
     </h2>
+    <!-- Jobs -->
     <ol class="mt-6 space-y-4">
       <li v-for="job in jobs" :key="job.company" class="flex gap-4">
         <div

@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import { addIcons, OhVueIcon } from 'oh-vue-icons'
+import { MdSchoolRound } from 'oh-vue-icons/icons/md'
+
+addIcons(MdSchoolRound)
+
 interface Education {
   school: string
   program: string
@@ -37,17 +42,7 @@ const getImagePath = (filename: string) => `/assets/icons/education/${filename}`
 <template>
   <div>
     <h2 class="mt-10 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="48"
-        viewBox="0 -960 960 960"
-        width="48"
-        class="h-6 w-6 flex-none dark:fill-zinc-400"
-      >
-        <path
-          d="M479-120 189-279v-240L40-600l439-240 441 240v317h-60v-282l-91 46v240L479-120Zm0-308 315-172-315-169-313 169 313 172Zm0 240 230-127v-168L479-360 249-485v170l230 127Zm1-240Zm-1 74Zm0 0Z"
-        />
-      </svg>
+      <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">Education</span>
     </h2>
     <ol class="mt-6 space-y-4">
