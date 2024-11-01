@@ -36,7 +36,7 @@ const getImagePath = (filename: string) => `@/assets/icons/${filename}`
 <template>
   <div>
     <!-- "Work" header -->
-    <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <h2 class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="md-workoutline-round" class="dark:text-zinc-400" />
       <span class="ml-3">Work</span>
     </h2>

@@ -41,7 +41,7 @@ const getImagePath = (filename: string) => `/assets/icons/education/${filename}`
 
 <template>
   <div>
-    <h2 class="mt-10 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">Education</span>
     </h2>

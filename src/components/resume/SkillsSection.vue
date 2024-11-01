@@ -26,7 +26,7 @@ const skills = {
 <template>
   <div>
     <!-- "Skills" header -->
-    <h2 class="mt-10 flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="px-human-height" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">Skills</span>
     </h2>
