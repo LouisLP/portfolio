@@ -10,7 +10,7 @@ addIcons(MdSchoolRound)
   <div>
     <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" />
-      <span class="ml-3">Education</span>
+      <span class="ml-3">{{ $t('education.title') }}</span>
     </h2>
     <ol class="mt-6 space-y-4">
       <li v-for="edu in education" :key="edu.school" class="flex gap-4">
