@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Header from '@/components/TrustyHeader.vue'
 import Photos from '@/components/TrustyPhotos.vue'
-import Skills from '@/components/TrustySkills.vue'
+import Skills from '@/components/resume/SkillsSection.vue'
 </script>
 
 <template>
