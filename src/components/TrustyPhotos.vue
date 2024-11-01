@@ -1,23 +1,29 @@
 <script setup lang="ts">
+import japan1 from '@/assets/pics/japan_1.jpeg'
+import pacificSpirit from '@/assets/pics/pacific_spirit.jpg'
+import misfits from '@/assets/pics/misfits_black_bg.jpeg'
+import konigssee from '@/assets/pics/konigssee.jpg'
+import berlin1 from '@/assets/pics/berlin_1.jpg'
+
 const photos = [
   {
-    src: '/assets/pics/photo1.jpg',
+    src: japan1,
     rotate: 'rotate-2',
   },
   {
-    src: '/assets/pics/photo2.jpg',
+    src: pacificSpirit,
     rotate: '-rotate-2',
   },
   {
-    src: '/assets/pics/photo3.jpg',
+    src: misfits,
     rotate: 'rotate-2',
   },
   {
-    src: '/assets/pics/photo4.jpg',
+    src: konigssee,
     rotate: 'rotate-2',
   },
   {
-    src: '/assets/pics/photo5.jpg',
+    src: berlin1,
     rotate: '-rotate-2',
   },
 ]
