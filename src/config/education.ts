@@ -1,3 +1,7 @@
+import ubcLogo from '@/assets/logos/education/ubc.png'
+import sfuLogo from '@/assets/logos/education/sfu.png'
+import sfuIatLogo from '@/assets/logos/education/sfu-iat.png'
+
 interface Education {
   school: string
   program: string
@@ -12,20 +16,20 @@ export const education: Education[] = [
     program: 'Bachelor of Science, Computer Science',
     startYear: '2022',
     endYear: '2023',
-    icon: 'ubc.png',
+    icon: ubcLogo,
   },
   {
     school: 'Simon Fraser University',
     program: 'Computer Science',
     startYear: '2020',
     endYear: '2022',
-    icon: 'sfu.png',
+    icon: sfuLogo,
   },
   {
     school: 'Simon Fraser University',
     program: 'Interactive Arts & Technology',
     startYear: '2015',
     endYear: '2017',
-    icon: 'sfu-iat.png',
+    icon: sfuIatLogo,
   },
 ]
