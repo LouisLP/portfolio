@@ -8,39 +8,29 @@ addIcons(PxHumanHeight)
 
 <template>
   <div>
-    <!-- "Skills" header -->
     <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="px-human-height" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">Skills</span>
     </h2>
-    <ul class="ml-6 mt-6 list-disc space-y-3">
-      <li
-        v-for="skill in skills.general"
-        :key="skill"
-        class="font-small w-full flex-none text-sm text-zinc-900 dark:text-zinc-100"
-      >
-        {{ skill }}
-      </li>
-      <li class="font-small w-full flex-none text-sm text-zinc-900 dark:text-zinc-100">
-        {{ skills.programming.title }}
-        <ul class="list-disc space-y-2 pl-5">
+
+    <div class="mt-6 space-y-6">
+      <div v-for="category in skills" :key="category.title">
+        <!-- Skill category's title -->
+        <h3 class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          {{ category.title }}
+        </h3>
+        <!-- Each skill in each category -->
+        <ul class="mt-2 flex flex-wrap gap-2">
           <li
-            v-for="subskill in skills.programming.subskills"
-            :key="subskill.title"
-            class="font-small mt-2 w-full flex-none text-xs text-zinc-800 dark:text-zinc-200"
+            v-for="skill in category.skills"
+            :id="`skill-${skill.name}`"
+            :key="skill.name"
+            class="rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300"
           >
-            <b>{{ subskill.title }}</b
-            >: {{ subskill.items }}
+            {{ skill.name }}
           </li>
         </ul>
-      </li>
-      <li
-        v-for="skill in skills.other"
-        :key="skill"
-        class="font-small w-full flex-none text-sm text-zinc-900 dark:text-zinc-100"
-      >
-        {{ skill }}
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
