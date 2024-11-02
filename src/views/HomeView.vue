@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import Header from '@/components/TrustyHeader.vue'
 import Photos from '@/components/TrustyPhotos.vue'
+import ArticlePreview from '@/components/articles/ArticlePreview.vue'
 import TrustyResume from '@/components/resume/TrustyResume.vue'
+import { articles } from '@/config/articles'
 </script>
 
 <template>
@@ -24,11 +26,15 @@ import TrustyResume from '@/components/resume/TrustyResume.vue'
                 <div
                   class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2"
                 >
-                  <!-- Articles -->
-                  <!-- <ArticleList /> -->
-                  <div>Articles</div>
                   <!-- Resume -->
                   <TrustyResume />
+                  <!-- Articles -->
+                  <section id="article-preview-section" class="space-y-6">
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      Recent Articles 📚
+                    </h2>
+                    <ArticlePreview :article="articles[0]" />
+                  </section>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ import DownloadCV from '@/components/resume/DownloadResume.vue'
 </script>
 
 <template>
-  <div class="mb-10 space-y-10 lg:pl-16 xl:pl-24">
+  <div class="mb-10 space-y-10 lg:pr-16 xl:pr-24">
     <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <WorkSection />
       <SkillsSection />
