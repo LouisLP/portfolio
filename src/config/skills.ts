@@ -5,59 +5,59 @@ enum SkillLevel {
   Expert = 'expert',
 }
 interface Skill {
-  name: string
+  skillKey: string
   level?: SkillLevel
   years?: number
 }
 
 interface SkillCategory {
-  title: string
+  categoryTitleKey: string
   skills: Skill[]
 }
 
 export const skills: SkillCategory[] = [
   {
-    title: 'Languages',
+    categoryTitleKey: 'languages',
     skills: [
-      { name: 'TypeScript/JavaScript', level: SkillLevel.Intermediate, years: 2 },
-      { name: 'SQL', level: SkillLevel.Advanced, years: 4 },
-      { name: 'Python', level: SkillLevel.Intermediate, years: 3 },
-      // { name: 'Java', level: SkillLevel.Intermediate, years: 2 },
-      { name: 'C++', level: SkillLevel.Beginner, years: 1 },
+      { skillKey: 'typescriptJavascript', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'sql', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'python', level: SkillLevel.Intermediate, years: 3 },
+      // { skillKey: 'Java', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'cPlusPlus', level: SkillLevel.Beginner, years: 1 },
     ],
   },
   {
-    title: 'Frontend Development',
+    categoryTitleKey: 'frontendDevelopment',
     skills: [
-      { name: 'Vue.js', level: SkillLevel.Intermediate, years: 1 },
-      { name: 'React.js', level: SkillLevel.Intermediate, years: 1 },
-      { name: 'HTML/CSS', level: SkillLevel.Expert, years: 5 },
-      { name: 'Tailwind CSS', level: SkillLevel.Advanced, years: 2 },
+      { skillKey: 'vueJs', level: SkillLevel.Intermediate, years: 1 },
+      { skillKey: 'reactJs', level: SkillLevel.Intermediate, years: 1 },
+      { skillKey: 'htmlCss', level: SkillLevel.Expert, years: 5 },
+      { skillKey: 'tailwindCss', level: SkillLevel.Advanced, years: 2 },
     ],
   },
   {
-    title: 'Backend & DevOps',
+    categoryTitleKey: 'backendAndDevOps',
     skills: [
-      { name: 'Node.js', level: SkillLevel.Advanced, years: 3 },
-      { name: 'Docker', level: SkillLevel.Intermediate, years: 2 },
-      { name: 'CI/CD', level: SkillLevel.Intermediate, years: 2 },
-      { name: 'Git', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'nodeJs', level: SkillLevel.Advanced, years: 3 },
+      { skillKey: 'docker', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'ciCd', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'git', level: SkillLevel.Advanced, years: 4 },
     ],
   },
   {
-    title: 'Databases',
+    categoryTitleKey: 'databases',
     skills: [
-      { name: 'MySQL', level: SkillLevel.Advanced, years: 3 },
-      { name: 'PostgreSQL', level: SkillLevel.Advanced, years: 3 },
-      { name: 'MongoDB', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'mySql', level: SkillLevel.Advanced, years: 3 },
+      { skillKey: 'postgreSql', level: SkillLevel.Advanced, years: 3 },
+      { skillKey: 'mongoDb', level: SkillLevel.Intermediate, years: 2 },
     ],
   },
   {
-    title: 'Creative',
+    categoryTitleKey: 'creative',
     skills: [
-      { name: 'Video Editing', level: SkillLevel.Expert, years: 11 },
-      { name: 'Motion Graphics', level: SkillLevel.Expert, years: 8 },
-      { name: 'Photography', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'videoEditing', level: SkillLevel.Expert, years: 11 },
+      { skillKey: 'motionGraphics', level: SkillLevel.Expert, years: 8 },
+      { skillKey: 'photography', level: SkillLevel.Advanced, years: 4 },
     ],
   },
 ]
