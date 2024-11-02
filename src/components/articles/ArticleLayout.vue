@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { IoArrowBack } from 'oh-vue-icons/icons/io'
+import { IoReturnUpBack } from 'oh-vue-icons/icons/io'
 import { articles } from '@/config/articles'
 import type { Article } from '@/types/Article'
 
-addIcons(IoArrowBack)
+addIcons(IoReturnUpBack)
 
 const route = useRoute()
 
@@ -35,7 +35,19 @@ const currentArticleComponent = computed(() =>
               <div class="mx-auto max-w-2xl lg:max-w-5xl">
                 <div class="xl:relative">
                   <div class="mx-auto max-w-2xl">
-                    <OhVueIcon name="io-arrow-back" />
+                    <RouterLink
+                      to="/"
+                      id="back-button-to-home"
+                      class="group inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
+                    >
+                      <span class="dark:text-zinc-400">
+                        <OhVueIcon
+                          name="io-return-up-back"
+                          class="mr-1 size-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400"
+                        />
+                        Back
+                      </span>
+                    </RouterLink>
 
                     <article v-if="article">
                       <header class="flex flex-col">
