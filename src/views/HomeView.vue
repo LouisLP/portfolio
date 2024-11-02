@@ -29,11 +29,15 @@ import { articles } from '@/config/articles'
                   <!-- Resume -->
                   <TrustyResume />
                   <!-- Articles -->
-                  <section id="article-preview-section" class="space-y-6">
+                  <section id="article-preview-section" class="space-y-8">
                     <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-                      Recent Articles 📚
+                      Projects & Reflections
                     </h2>
-                    <ArticlePreview :article="articles[0]" />
+                    <ArticlePreview
+                      v-for="article in articles"
+                      :key="article.id"
+                      :article="article"
+                    />
                   </section>
                 </div>
               </div>
