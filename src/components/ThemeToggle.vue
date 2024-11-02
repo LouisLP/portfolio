@@ -14,13 +14,17 @@ const toggleTheme = () => {
 }
 
 onMounted(() => {
+  // Check localStorage first
   const savedTheme = localStorage.getItem('theme')
+  // Set initial dark mode state
   isDark.value =
     savedTheme === 'dark' ||
     (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-
-  if (isDark.value) {
-    document.documentElement.classList.add('dark')
+  // Apply the theme immediately
+  document.documentElement.classList.toggle('dark', isDark.value)
+  // Save the initial theme if not already saved
+  if (!savedTheme) {
+    localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
   }
 })
 </script>

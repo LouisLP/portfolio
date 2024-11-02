@@ -2,6 +2,7 @@
 import { computed, markRaw, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { articles } from '@/config/articles'
+import ThemeToggle from '@/components/ThemeToggle.vue'
 
 const route = useRoute()
 
@@ -33,13 +34,19 @@ onMounted(async () => {
               <div class="mx-auto max-w-2xl lg:max-w-5xl">
                 <div class="xl:relative">
                   <div class="mx-auto max-w-2xl">
-                    <RouterLink
-                      to="/"
-                      id="back-button-to-home"
-                      class="group inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
+                    <div
+                      id="back-button-and-theme-toggle-container"
+                      class="flex items-center justify-between"
                     >
-                      ← Back
-                    </RouterLink>
+                      <RouterLink
+                        to="/"
+                        id="back-button-to-home"
+                        class="group inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
+                      >
+                        ← Back
+                      </RouterLink>
+                      <ThemeToggle />
+                    </div>
 
                     <article v-if="article">
                       <header class="flex flex-col">
@@ -65,9 +72,9 @@ onMounted(async () => {
                         </div>
                       </header>
 
-                      <div class="prose dark:prose-invert mb-28 mt-8">
+                      <div class="prose mb-28 mt-8 dark:prose-invert">
                         <Suspense>
-                          <div class="prose dark:prose-invert mb-28 mt-8">
+                          <div class="prose mb-28 mt-8 dark:prose-invert">
                             <component v-if="articleComponent" :is="articleComponent" />
                             <div v-else class="flex items-center justify-center py-10">
                               <span class="text-zinc-500">Loading article...</span>
