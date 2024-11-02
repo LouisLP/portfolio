@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, markRaw, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { articles } from '@/config/articles'
 
@@ -12,7 +12,7 @@ const article = computed(() => articles.find((article) => article.id === route.p
 onMounted(async () => {
   if (article.value?.component) {
     const module = await article.value.component()
-    articleComponent.value = module.default
+    articleComponent.value = markRaw(module.default)
   }
 })
 </script>
