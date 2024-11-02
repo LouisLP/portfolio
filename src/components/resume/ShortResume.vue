@@ -2,7 +2,7 @@
 import WorkSection from '@/components/resume/WorkSection.vue'
 import SkillsSection from '@/components/resume/SkillsSection.vue'
 import EducationSection from '@/components/resume/EducationSection.vue'
-import DownloadCV from '@/components/resume/DownloadResume.vue'
+import OpenFullResume from '@/components/resume/OpenFullResume.vue'
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import DownloadCV from '@/components/resume/DownloadResume.vue'
       <WorkSection />
       <SkillsSection />
       <EducationSection />
-      <DownloadCV />
+      <OpenFullResume />
     </div>
   </div>
 </template>
