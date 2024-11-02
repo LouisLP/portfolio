@@ -1,9 +1,12 @@
 import jobreelLogo from '@/assets/logos/work/jobreel.png'
 import misfitsLogo from '@/assets/logos/work/misfits.png'
+import msgLogo from '@/assets/logos/work/msg.png'
+import clgLogo from '@/assets/logos/work/clg.png'
+// import tempoStormLogo from '@/assets/logos/work/tempostorm.png'
 
 interface Job {
-  company: string
-  role: string
+  companyKey: string
+  roleKey: string
   startYear: string
   endYear: string
   icon: string
@@ -11,18 +14,38 @@ interface Job {
 
 export const jobs: Job[] = [
   {
-    company: 'Jobreel',
-    role: 'Full Stack Engineer',
+    companyKey: 'jobreel',
+    roleKey: 'fullStackDeveloper',
     startYear: '2024',
-    endYear: 'Present',
+    endYear: '2025',
     icon: jobreelLogo,
   },
   {
-    company: 'Misfits Gaming Group',
-    role: 'Senior Video Editor & Motion Designer',
+    companyKey: 'misfits',
+    roleKey: 'seniorVideoEditorAndMotionDesigner',
     startYear: '2018',
     endYear: '2021',
     icon: misfitsLogo,
   },
-  // Add other jobs here...
+  {
+    companyKey: 'msg',
+    roleKey: 'videoEditorAndDesigner',
+    startYear: '2017',
+    endYear: '2017',
+    icon: msgLogo,
+  },
+  {
+    companyKey: 'clg',
+    roleKey: 'videoProducer',
+    startYear: '2017',
+    endYear: '2017',
+    icon: clgLogo,
+  },
+  // {
+  //   companyKey: 'tempoStorm',
+  //   roleKey: 'videoEditorAndDesigner',
+  //   startYear: '2015',
+  //   endYear: '2015',
+  //   icon: tempoStormLogo,
+  // },
 ]
