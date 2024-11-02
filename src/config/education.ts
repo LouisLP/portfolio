@@ -8,6 +8,7 @@ interface Education {
   startYear: string
   endYear: string
   icon: string
+  needsIconInvert?: boolean
 }
 
 export const education: Education[] = [
@@ -17,6 +18,7 @@ export const education: Education[] = [
     startYear: '2022',
     endYear: '2023',
     icon: ubcLogo,
+    needsIconInvert: true,
   },
   {
     schoolKey: 'sfu',

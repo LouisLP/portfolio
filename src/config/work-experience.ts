@@ -10,6 +10,7 @@ interface Job {
   startYear: string
   endYear: string
   icon: string
+  needsIconInvert?: boolean
 }
 
 export const jobs: Job[] = [
@@ -33,6 +34,7 @@ export const jobs: Job[] = [
     startYear: '2017',
     endYear: '2017',
     icon: msgLogo,
+    needsIconInvert: true,
   },
   {
     companyKey: 'clg',
