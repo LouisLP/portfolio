@@ -29,7 +29,7 @@ import { articles } from '@/config/articles'
                   <!-- Resume -->
                   <TrustyResume />
                   <!-- Articles -->
-                  <section id="article-preview-section" class="space-y-8">
+                  <section id="article-preview-section" class="space-y-10">
                     <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
                       Projects & Reflections
                     </h2>
