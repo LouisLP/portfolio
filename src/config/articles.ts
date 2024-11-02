@@ -2,6 +2,18 @@ import type { Article } from '@/types/Article'
 
 export const articles: Article[] = [
   {
+    id: 'full-stack-jobreel',
+    title: 'Full Stack at Jobreel',
+    date: 'November 1, 2024',
+    dateISO: '2024-11-01',
+    path: '/articles/full-stack-jobreel',
+    blurb: 'Experience as a full stack developer at Jobreel.',
+    readTime: '4 min read',
+    tags: ['career', 'full stack'],
+    category: 'Reflections',
+    component: () => import('@/components/articles/JobreelFullStack.vue'),
+  },
+  {
     id: 'directed-studies',
     title: 'Directed Studies & Publication',
     date: 'June 20, 2024',
