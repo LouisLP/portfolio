@@ -28,11 +28,11 @@ defineProps<{
       {{ article.date }}
     </time>
 
-    <div v-if="article.tags" class="mt-2 flex gap-2">
+    <div v-if="article.tags" class="relative z-10 mt-2 flex gap-2">
       <span
         v-for="tag in article.tags"
         :key="tag"
-        class="rounded-full bg-zinc-100 px-2 py-1 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+        class="relative z-20 rounded-full bg-zinc-100 px-2 py-1 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
       >
         {{ tag }}
       </span>
