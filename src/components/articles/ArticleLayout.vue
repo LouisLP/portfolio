@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { articles } from '@/config/articles'
-import type { Article } from '@/types/Article'
 
 const route = useRoute()
 
-const article = computed<Article | undefined>(() =>
-  articles.find((article: Article) => article.path === `/articles/${route.params.id}`)
-)
+const articleComponent = ref(null)
 
-const currentArticleComponent = computed(() =>
-  article.value?.component ? article.value.component() : null
-)
+const article = computed(() => articles.find((article) => article.id === route.params.id))
+
+onMounted(async () => {
+  if (article.value?.component) {
+    const module = await article.value.component()
+    articleComponent.value = module.default
+  }
+})
 </script>
 
 <template>
@@ -65,12 +67,12 @@ const currentArticleComponent = computed(() =>
 
                       <div class="prose dark:prose-invert mb-28 mt-8">
                         <Suspense>
-                          <component :is="currentArticleComponent" />
-                          <template #fallback>
-                            <div class="flex items-center justify-center py-10">
+                          <div class="prose dark:prose-invert mb-28 mt-8">
+                            <component v-if="articleComponent" :is="articleComponent" />
+                            <div v-else class="flex items-center justify-center py-10">
                               <span class="text-zinc-500">Loading article...</span>
                             </div>
-                          </template>
+                          </div>
                         </Suspense>
                       </div>
                     </article>
