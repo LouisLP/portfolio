@@ -76,15 +76,3 @@ const handlePrint = () => {
     </div>
   </div>
 </template>
-
-<style>
-@media print {
-  @page {
-    margin: 0;
-    size: A4;
-  }
-  body {
-    margin: 0;
-  }
-}
-</style>
