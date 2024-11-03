@@ -1,5 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# Louis' Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern, responsive portfolio website built with Vue 3 and TypeScript, featuring dark mode, internationalization, and a clean, minimalist design.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Technologies
+
+- **Frontend Framework**: Vue 3 with TypeScript
+- **Build Tool**: Vite
+- **Styling**:
+  - Tailwind CSS
+  - @tailwindcss/typography for prose styling
+  - Custom CSS animations
+- **Features**:
+  - Dark/Light theme toggle with persistence
+  - Internationalization (i18n) supporting English, French, and German
+  - Responsive design optimized for all devices
+  - Print-optimized resume view
+  - Dynamic article rendering with Markdown support
+  - Image optimization and lazy loading
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Type-check and build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Deployment
+
+Automatically deployed to GitHub Pages via GitHub Actions when pushing to the main branch.
