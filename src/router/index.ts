@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Article',
     component: () => import('../components/articles/ArticleLayout.vue'),
   },
+  {
+    path: '/resume/print',
+    name: 'PrintResume',
+    component: () => import('@/views/PrintResume.vue'),
+  },
 ]
 
 const router = createRouter({
