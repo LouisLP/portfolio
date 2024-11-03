@@ -5,7 +5,7 @@ export default {
       'Canadian developer living in Berlin, Germany. Previously a professional video editor in Berlin and Los Angeles for the gaming industry.',
   },
   work: {
-    title: 'Work',
+    title: 'Work Experience',
     companies: {
       jobreel: 'Jobreel',
       misfits: 'Misfits Gaming Group',
@@ -69,7 +69,7 @@ export default {
       langara: 'Langara College',
     },
     programs: {
-      bachelorOfScienceComputerScience: 'Bachelor of Science, Computer Science',
+      bachelorOfScienceComputerScience: 'BSc, Computer Science',
       computerScience: 'Computer Science',
       iat: 'Interactive Arts & Technology',
     },

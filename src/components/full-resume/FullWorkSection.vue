@@ -11,13 +11,13 @@ addIcons(MdWorkoutlineRound)
     <!-- "Work" header -->
     <h2 class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="md-workoutline-round" class="dark:text-zinc-400" />
-      <span class="ml-3">Work</span>
+      <span class="ml-3">{{ $t('work.title') }}</span>
     </h2>
     <!-- Jobs -->
     <ol class="mt-6 space-y-4">
-      <li v-for="job in jobs" :key="job.companyKey" class="flex gap-4">
+      <li v-for="job in jobs" :key="job.companyKey" class="flex items-start gap-4">
         <div
-          class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+          class="relative flex h-10 w-10 flex-none items-center justify-center rounded-md shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
         >
           <img
             :src="job.icon"
