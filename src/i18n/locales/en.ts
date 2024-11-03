@@ -20,6 +20,16 @@ export default {
       videoProducer: 'Video Producer',
       writer: 'Writer',
     },
+    descriptions: {
+      jobreelDescription:
+        'Frontend and backend development for the Jobreel application and admin-panel, utilizing Vue.js, Node.js with Express, MongoDB, Supertokens, and more.',
+      misfitsDescription:
+        'Video editing and motion design for all teams in the Misfits Gaming Group, based in Berlin, Germany. Involved traveling various competitive events across Europe, managing several other editors. Encompassed 3 main teams in the LEC, CDL, and OWL, as well as individual brands.',
+      msgDescription:
+        "Madison Square Garden's acquisition of CLG provided several opportunities to work for them directly, including promotional videos, event recaps, and Fan Fest designs.",
+      clgDescription:
+        "Video editing and production in Los Angeles, California for the company's CEO (Devin Nash), the Overwatch team, and the League of Legends team.",
+    },
   },
   skills: {
     title: 'Skills',

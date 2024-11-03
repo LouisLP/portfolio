@@ -7,6 +7,7 @@ import clgLogo from '@/assets/logos/work/clg.png'
 interface Job {
   companyKey: string
   roleKey: string
+  descriptionKey: string
   startYear: string
   endYear: string
   icon: string
@@ -17,6 +18,7 @@ export const jobs: Job[] = [
   {
     companyKey: 'jobreel',
     roleKey: 'fullStackDeveloper',
+    descriptionKey: 'jobreelDescription',
     startYear: '2024',
     endYear: '2025',
     icon: jobreelLogo,
@@ -24,6 +26,7 @@ export const jobs: Job[] = [
   {
     companyKey: 'misfits',
     roleKey: 'seniorVideoEditorAndMotionDesigner',
+    descriptionKey: 'misfitsDescription',
     startYear: '2018',
     endYear: '2021',
     icon: misfitsLogo,
@@ -31,6 +34,7 @@ export const jobs: Job[] = [
   {
     companyKey: 'msg',
     roleKey: 'videoEditorAndDesigner',
+    descriptionKey: 'msgDescription',
     startYear: '2017',
     endYear: '2017',
     icon: msgLogo,
@@ -39,6 +43,7 @@ export const jobs: Job[] = [
   {
     companyKey: 'clg',
     roleKey: 'videoProducer',
+    descriptionKey: 'clgDescription',
     startYear: '2017',
     endYear: '2017',
     icon: clgLogo,
