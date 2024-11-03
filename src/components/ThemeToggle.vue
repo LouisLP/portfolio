@@ -32,9 +32,9 @@ onMounted(() => {
 <template>
   <button
     @click="toggleTheme"
-    class="rounded-lg bg-zinc-50 p-2 text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
+    class="rounded-lg bg-zinc-50 p-[0.4rem] text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
     :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
   >
-    <OhVueIcon :name="isDark ? 'ri-sun-line' : 'ri-moon-line'" class="h-5 w-5" />
+    <OhVueIcon :name="isDark ? 'ri-sun-line' : 'ri-moon-line'" class="size-5" />
   </button>
 </template>
