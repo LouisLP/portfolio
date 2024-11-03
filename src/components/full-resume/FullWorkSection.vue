@@ -48,7 +48,7 @@ addIcons(MdWorkoutlineRound)
           </dd>
 
           <!-- Add description -->
-          <dd class="mt-2 w-full text-sm text-zinc-600 dark:text-zinc-400">
+          <dd class="mt-2 w-full text-xs text-zinc-600 dark:text-zinc-400">
             {{ $t(`work.descriptions.${job.descriptionKey}`) }}
           </dd>
         </dl>

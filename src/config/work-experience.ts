@@ -2,7 +2,6 @@ import jobreelLogo from '@/assets/logos/work/jobreel.png'
 import misfitsLogo from '@/assets/logos/work/misfits.png'
 import msgLogo from '@/assets/logos/work/msg.png'
 import clgLogo from '@/assets/logos/work/clg.png'
-// import tempoStormLogo from '@/assets/logos/work/tempostorm.png'
 
 interface Job {
   companyKey: string
@@ -48,11 +47,4 @@ export const jobs: Job[] = [
     endYear: '2017',
     icon: clgLogo,
   },
-  // {
-  //   companyKey: 'tempoStorm',
-  //   roleKey: 'videoEditorAndDesigner',
-  //   startYear: '2015',
-  //   endYear: '2015',
-  //   icon: tempoStormLogo,
-  // },
 ]

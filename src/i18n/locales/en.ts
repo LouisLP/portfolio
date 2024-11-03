@@ -22,13 +22,13 @@ export default {
     },
     descriptions: {
       jobreelDescription:
-        'Frontend and backend development for the Jobreel application and admin-panel, utilizing Vue.js, Node.js with Express, MongoDB, Supertokens, and more.',
+        "End-to-end development of Jobreel's core application and admin panel, architecting solutions using Vue.js, Node.js, and MongoDB. Drove technical and UI/UX improvements across the full development stack.",
       misfitsDescription:
-        'Video editing and motion design for all teams in the Misfits Gaming Group, based in Berlin, Germany. Involved traveling various competitive events across Europe, managing several other editors. Encompassed 3 main teams in the LEC, CDL, and OWL, as well as individual brands.',
+        'Spearheaded video editing and motion design across multiple premier esports divisions, including the LEC, CDL, and OWL teams. Managed and mentored a team of editors while traveling extensively throughout Europe for major competitions. Orchestrated content creation for multiple brand identities within the organization.',
       msgDescription:
-        "Madison Square Garden's acquisition of CLG provided several opportunities to work for them directly, including promotional videos, event recaps, and Fan Fest designs.",
+        "Produced high-impact video content, motion design, and event designs for one of the world's most renowned entertainment venues upon their acquisition of Counter Logic Gaming.",
       clgDescription:
-        "Video editing and production in Los Angeles, California for the company's CEO (Devin Nash), the Overwatch team, and the League of Legends team.",
+        'Created strategic video content for multiple teams across major esports titles, working directly with the CEO and key stakeholders. Produced professional-grade content for both League of Legends and Overwatch divisions, contributing to brand growth and audience engagement.',
     },
   },
   skills: {
@@ -72,6 +72,19 @@ export default {
       bachelorOfScienceComputerScience: 'Bachelor of Science, Computer Science',
       computerScience: 'Computer Science',
       iat: 'Interactive Arts & Technology',
+    },
+  },
+  projects: {
+    title: 'Projects',
+    titles: {
+      directedStudies: 'Directed Studies & Publication',
+      prairieLearnRanked: 'PrairieLearn Ranked',
+    },
+    descriptions: {
+      directedStudiesDescription:
+        'Directed studies at UBC under Dr. Ramon Lawrence — gaining industry-level experience in system administration and backend development. Later co-authored a paper titled "Live Session Gamification using PrairieLearn"',
+      prairieLearnRankedDescription:
+        'Capstone project at UBC, creating a ranking system for the PrairieLearn quizzing platform to help students gauge performance in live and asynchronous settings.',
     },
   },
 } as const

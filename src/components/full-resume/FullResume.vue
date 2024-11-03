@@ -7,6 +7,7 @@ import SkillsSection from '@/components/resume/SkillsSection.vue'
 import EducationSection from '@/components/resume/EducationSection.vue'
 import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
 import { resumeLinks } from '@/config/resume-links'
+import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
 
 addIcons(IoClose, IoPrint, BiGithub, BiLinkedin, RiGlobalLine, RiMailLine)
 
@@ -58,10 +59,13 @@ const handlePrint = () => {
             </a>
           </div>
           <!-- Sections -->
-          <div class="space-y-8">
+          <div>
             <FullWorkSection />
             <div class="grid grid-cols-2 gap-8">
-              <EducationSection />
+              <div class="space-y-8">
+                <EducationSection />
+                <ProjectsSection />
+              </div>
               <SkillsSection />
             </div>
           </div>
