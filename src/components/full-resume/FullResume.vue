@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import { IoClose, IoPrint } from 'oh-vue-icons/icons/io'
-import WorkSection from '@/components/resume/WorkSection.vue'
 import SkillsSection from '@/components/resume/SkillsSection.vue'
 import EducationSection from '@/components/resume/EducationSection.vue'
+import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
 
 addIcons(IoClose, IoPrint)
 
@@ -40,7 +40,7 @@ const handlePrint = () => {
             Louis Lascelles-Palys
           </h1>
           <div class="space-y-8">
-            <WorkSection />
+            <FullWorkSection />
             <div class="grid grid-cols-2 gap-8">
               <EducationSection />
               <SkillsSection />
