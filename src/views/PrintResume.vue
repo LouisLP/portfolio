@@ -3,8 +3,8 @@ import { onMounted } from 'vue'
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import { RiGlobalLine, RiMailLine } from 'oh-vue-icons/icons/ri'
 import { BiGithub, BiLinkedin } from 'oh-vue-icons/icons/bi'
-import SkillsSection from '@/components/resume/SkillsSection.vue'
-import EducationSection from '@/components/resume/EducationSection.vue'
+import FullSkillsSection from '@/components/full-resume/FullSkillsSection.vue'
+import FullEducationSection from '@/components/full-resume/FullEducationSection.vue'
 import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
 import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
 import { resumeLinks } from '@/config/resume-links'
@@ -39,10 +39,10 @@ onMounted(() => {
         <FullWorkSection />
         <div class="grid grid-cols-2 gap-8">
           <div class="space-y-8">
-            <EducationSection />
+            <FullEducationSection />
             <ProjectsSection />
           </div>
-          <SkillsSection />
+          <FullSkillsSection />
         </div>
       </div>
     </div>
