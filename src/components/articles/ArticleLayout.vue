@@ -86,7 +86,10 @@ onMounted(async () => {
 
                     <div v-else class="py-10 text-center">
                       <h2 class="text-xl text-zinc-800 dark:text-zinc-100">Article not found</h2>
-                      <RouterLink to="/" class="mt-4 text-teal-500 hover:text-teal-600">
+                      <RouterLink
+                        to="/vue-portfolio/"
+                        class="mt-4 text-teal-500 hover:text-teal-600"
+                      >
                         Return to home
                       </RouterLink>
                     </div>

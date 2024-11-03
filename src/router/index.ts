@@ -2,24 +2,28 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: '/',
+    redirect: '/vue-portfolio',
+  },
+  {
     path: '/vue-portfolio',
     name: 'Home',
     component: () => import('@/views/HomeView.vue'),
   },
   {
-    path: '/articles/:id',
+    path: '/vue-portfolio/articles/:id',
     name: 'Article',
     component: () => import('@/components/articles/ArticleLayout.vue'),
   },
   {
-    path: '/resume/print',
+    path: '/vue-portfolio/resume/print',
     name: 'PrintResume',
     component: () => import('@/views/PrintResume.vue'),
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/vue-portfolio/'),
   routes,
   scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {

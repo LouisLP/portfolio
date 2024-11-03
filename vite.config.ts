@@ -11,15 +11,8 @@ export default defineConfig({
     },
   },
   build: {
-    // Add source maps for debugging
-    sourcemap: true,
-    // Ensure assets are properly handled
+    outDir: 'dist',
     assetsDir: 'assets',
-    // Configure rollup options if needed
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
+    sourcemap: true,
   },
 })

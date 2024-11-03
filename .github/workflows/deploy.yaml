@@ -37,3 +37,4 @@ jobs:
           folder: dist
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }} # Added token
+          clean: true
