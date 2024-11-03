@@ -19,7 +19,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <div class="mx-auto h-[297mm] w-[210mm] border border-solid border-black p-8 px-14">
+    <div class="mx-auto h-[297mm] w-[210mm] p-8 px-14">
       <!-- Name -->
       <h1 class="mb-2 text-3xl font-bold text-zinc-900">Louis Lascelles-Palys</h1>
       <!-- Links -->
