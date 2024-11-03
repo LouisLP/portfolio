@@ -8,9 +8,11 @@ import EducationSection from '@/components/resume/EducationSection.vue'
 import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
 import { resumeLinks } from '@/config/resume-links'
 import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
+import { useRouter } from 'vue-router'
 
 addIcons(IoClose, IoPrint, BiGithub, BiLinkedin, RiGlobalLine, RiMailLine)
 
+const Router = useRouter()
 const emit = defineEmits(['closeFullResume'])
 
 function closeFullResume() {
@@ -18,7 +20,7 @@ function closeFullResume() {
 }
 
 const handlePrint = () => {
-  window.print()
+  Router.push({ name: 'PrintResume' })
 }
 </script>
 
