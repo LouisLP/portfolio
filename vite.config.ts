@@ -10,4 +10,16 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    // Add source maps for debugging
+    sourcemap: true,
+    // Ensure assets are properly handled
+    assetsDir: 'assets',
+    // Configure rollup options if needed
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 })
