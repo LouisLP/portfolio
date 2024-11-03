@@ -18,8 +18,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-white">
-    <div class="mx-auto h-[297mm] w-[210mm] border border-solid border-black p-8 px-16">
+  <div>
+    <div class="mx-auto h-[297mm] w-[210mm] border border-solid border-black p-8 px-14">
       <!-- Name -->
       <h1 class="mb-2 text-3xl font-bold text-zinc-900">Louis Lascelles-Palys</h1>
       <!-- Links -->
@@ -53,5 +53,12 @@ onMounted(() => {
 @page {
   margin: 0;
   size: A4;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
 </style>

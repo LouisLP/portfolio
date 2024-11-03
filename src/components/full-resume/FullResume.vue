@@ -41,7 +41,7 @@ const handlePrint = () => {
         </div>
 
         <!-- Resume Content -->
-        <div class="mx-auto h-[297mm] w-[210mm] p-8 print:p-0">
+        <div class="mx-auto h-[297mm] w-[210mm] p-8 px-14 print:p-0">
           <!-- Name -->
           <h1 class="mb-2 text-3xl font-bold dark:text-zinc-100 dark:print:text-zinc-900">
             Louis Lascelles-Palys
