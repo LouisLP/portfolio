@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/vue-portfolio/'), // Make this explicit to match vite.config.ts
+  history: createWebHashHistory('/vue-portfolio/'),
   routes,
   scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
