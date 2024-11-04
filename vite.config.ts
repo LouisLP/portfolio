@@ -4,10 +4,19 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/vue-portfolio/',
+  base: 'vue-portfolio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
+      },
     },
   },
 })
