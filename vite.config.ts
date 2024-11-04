@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/vue-portfolio/', // Just the path, not full URL
+  base: '/vue-portfolio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -14,5 +14,10 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 })
