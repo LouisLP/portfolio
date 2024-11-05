@@ -1,11 +1,11 @@
-import japan1 from '@/assets/pics/japan_1.jpeg'
-import pacificSpirit from '@/assets/pics/pacific_spirit.jpg'
-import misfits from '@/assets/pics/misfits_black_bg.jpeg'
-import konigssee from '@/assets/pics/konigssee.jpg'
-import berlin1 from '@/assets/pics/berlin_1.jpg'
+const japan1 = new URL('@/assets/pics/japan_1.jpeg', import.meta.url)
+const pacificSpirit = new URL('@/assets/pics/pacific_spirit.jpg', import.meta.url)
+const misfits = new URL('@/assets/pics/misfits_black_bg.jpeg', import.meta.url)
+const konigssee = new URL('@/assets/pics/konigssee.jpg', import.meta.url)
+const berlin1 = new URL('@/assets/pics/berlin_1.jpg', import.meta.url)
 
 interface Photo {
-  src: string
+  src: URL
   rotate: string
 }
 

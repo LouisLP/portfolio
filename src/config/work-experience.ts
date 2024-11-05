@@ -1,7 +1,7 @@
-import jobreelLogo from '@/assets/logos/work/jobreel.png'
-import misfitsLogo from '@/assets/logos/work/misfits.png'
-import msgLogo from '@/assets/logos/work/msg-dark.png'
-import clgLogo from '@/assets/logos/work/clg.png'
+const jobreelLogo = new URL('@/assets/logos/work/jobreel.png', import.meta.url)
+const misfitsLogo = new URL('@/assets/logos/work/misfits.png', import.meta.url)
+const msgLogo = new URL('@/assets/logos/work/msg-dark.png', import.meta.url)
+const clgLogo = new URL('@/assets/logos/work/clg.png', import.meta.url)
 
 interface Job {
   companyKey: string
@@ -9,7 +9,7 @@ interface Job {
   descriptionKey: string
   startYear: string
   endYear: string
-  icon: string
+  icon: URL
   needsIconInvert?: boolean
 }
 

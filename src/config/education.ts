@@ -1,14 +1,14 @@
-import ubcLogo from '@/assets/logos/education/ubc.png'
-import ubcLogoDark from '@/assets/logos/education/ubc-dark.png'
-import sfuLogo from '@/assets/logos/education/sfu.png'
-import sfuIatLogo from '@/assets/logos/education/sfu-iat.png'
+const ubcLogo = new URL('@/assets/logos/education/ubc.png', import.meta.url)
+const ubcLogoDark = new URL('@/assets/logos/education/ubc-dark.png', import.meta.url)
+const sfuLogo = new URL('@/assets/logos/education/sfu.png', import.meta.url)
+const sfuIatLogo = new URL('@/assets/logos/education/sfu-iat.png', import.meta.url)
 
 interface Education {
   schoolKey: string
   programKey: string
   startYear: string
   endYear: string
-  icon: string
+  icon: URL
   needsIconInvert?: boolean
 }
 

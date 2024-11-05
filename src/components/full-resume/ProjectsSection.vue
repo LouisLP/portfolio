@@ -14,7 +14,7 @@ addIcons(MdTerminalRound)
     </h2>
     <ol class="mt-4 space-y-2">
       <li v-for="project in projects" :key="project.titleKey">
-        <RouterLink v-if="project.url" :to="project.url" class="group flex flex-col">
+        <div class="group flex flex-col">
           <div class="flex items-center">
             <span class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
               {{ $t(`projects.titles.${project.titleKey}`) }}
@@ -26,7 +26,7 @@ addIcons(MdTerminalRound)
           <p class="mt-2 text-xs text-zinc-600 dark:text-zinc-400">
             {{ $t(`projects.descriptions.${project.descriptionKey}`) }}
           </p>
-        </RouterLink>
+        </div>
       </li>
     </ol>
   </div>

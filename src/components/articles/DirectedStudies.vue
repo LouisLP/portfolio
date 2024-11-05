@@ -2,9 +2,18 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-import helloWorld from '@/assets/article-images/directed-studies/hello-world.png'
-import liveScoreboard from '@/assets/article-images/directed-studies/live-scoreboard.png'
-import onlinePaper from '@/assets/article-images/directed-studies/online-paper.png'
+const onlinePaper = new URL(
+  '@/assets/article-images/directed-studies/online-paper.png',
+  import.meta.url
+).href
+const liveScoreboard = new URL(
+  '@/assets/article-images/directed-studies/live-scoreboard.png',
+  import.meta.url
+).href
+const helloWorld = new URL(
+  '@/assets/article-images/directed-studies/hello-world.png',
+  import.meta.url
+).href
 
 interface Section {
   title?: string
