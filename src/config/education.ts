@@ -1,7 +1,7 @@
-const ubcLogo = new URL('../assets/logos/education/ubc.png', import.meta.url).href
-const ubcLogoDark = new URL('../assets/logos/education/ubc-dark.png', import.meta.url).href
-const sfuLogo = new URL('../assets/logos/education/sfu.png', import.meta.url).href
-const sfuIatLogo = new URL('../assets/logos/education/sfu-iat.png', import.meta.url).href
+import ubcLogo from '@/assets/logos/education/ubc.png'
+import ubcLogoDark from '@/assets/logos/education/ubc-dark.png'
+import sfuLogo from '@/assets/logos/education/sfu.png'
+import sfuIatLogo from '@/assets/logos/education/sfu-iat.png'
 
 interface Education {
   schoolKey: string
