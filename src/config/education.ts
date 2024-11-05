@@ -2,6 +2,17 @@ import ubcLogo from '/assets/logos/education/ubc.png'
 import ubcLogoDark from '/assets/logos/education/ubc-dark.png'
 import sfuLogo from '/assets/logos/education/sfu.png'
 import sfuIatLogo from '/assets/logos/education/sfu-iat.png'
+import { computed } from 'vue'
+
+const assetBaseUrl = computed(() => {
+  if (import.meta.env.DEV) {
+    // Use local path for development
+    return ''
+  } else {
+    // Use GitHub Pages base URL for production
+    return `${import.meta.env.BASE_URL}`
+  }
+})
 
 interface Education {
   schoolKey: string
@@ -18,7 +29,7 @@ export const education: Education[] = [
     programKey: 'bachelorOfScienceComputerScience',
     startYear: '2022',
     endYear: '2023',
-    icon: ubcLogo,
+    icon: `${assetBaseUrl.value}${ubcLogo}`,
     needsIconInvert: true,
   },
   {
