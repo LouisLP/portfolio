@@ -2,22 +2,10 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-const plrElusive100 = new URL(
-  '@/assets/article-images/prairielearn-ranked/PLR-elusive-100.png',
-  import.meta.url
-)
-const plrBurnup = new URL(
-  '@/assets/article-images/prairielearn-ranked/PLR-burnup.jpg',
-  import.meta.url
-)
-const plrScoreboards = new URL(
-  '@/assets/article-images/prairielearn-ranked/PLR-scoreboards.png',
-  import.meta.url
-)
-const plrMakeDev = new URL(
-  '@/assets/article-images/prairielearn-ranked/PLR-make-dev.png',
-  import.meta.url
-)
+import plrElusive100 from '/assets/article-images/prairielearn-ranked/PLR-elusive-100.png'
+import plrBurnup from '/assets/article-images/prairielearn-ranked/PLR-burnup.jpg'
+import plrScoreboards from '/assets/article-images/prairielearn-ranked/PLR-scoreboards.png'
+import plrMakeDev from '/assets/article-images/prairielearn-ranked/PLR-make-dev.png'
 
 interface Section {
   title?: string

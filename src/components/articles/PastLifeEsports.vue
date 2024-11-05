@@ -2,18 +2,11 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-const clgTwitchcon = new URL(
-  '@/assets/article-images/past-lives/CLG-twitchcon.jpg',
-  import.meta.url
-).href
-const clgLcs = new URL('@/assets/article-images/past-lives/CLG-LCS.jpeg', import.meta.url).href
-const mggMadrid = new URL('@/assets/article-images/past-lives/MGG-Madrid.jpg', import.meta.url).href
-const mggWriting = new URL('@/assets/article-images/past-lives/MGG-writing.jpg', import.meta.url)
-  .href
-const mggBerlinSunset = new URL(
-  '@/assets/article-images/past-lives/MGG-Berlin-sunset.jpg',
-  import.meta.url
-).href
+import clgTwitchcon from '/assets/article-images/past-lives/CLG-twitchcon.jpg'
+import clgLcs from '/assets/article-images/past-lives/CLG-LCS.jpeg'
+import mggMadrid from '/assets/article-images/past-lives/MGG-Madrid.jpg'
+import mggWriting from '/assets/article-images/past-lives/MGG-writing.jpg'
+import mggBerlinSunset from '/assets/article-images/past-lives/MGG-Berlin-sunset.jpg'
 
 interface Section {
   title?: string

@@ -2,14 +2,8 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-const jobreelTeamEvent = new URL(
-  '@/assets/article-images/full-stack-jobreel/team-event.jpg',
-  import.meta.url
-).href
-const jobreelTeamPhoto = new URL(
-  '@/assets/article-images/full-stack-jobreel/team-photo.jpg',
-  import.meta.url
-).href
+import jobreelTeamEvent from '/assets/article-images/full-stack-jobreel/team-event.jpg'
+import jobreelTeamPhoto from '/assets/article-images/full-stack-jobreel/team-photo.jpg'
 
 interface Section {
   title?: string
