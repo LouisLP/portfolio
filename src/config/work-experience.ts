@@ -1,7 +1,7 @@
-const jobreelLogo = new URL('@/assets/logos/work/jobreel.png', import.meta.url)
-const misfitsLogo = new URL('@/assets/logos/work/misfits.png', import.meta.url)
-const msgLogo = new URL('@/assets/logos/work/msg-dark.png', import.meta.url)
-const clgLogo = new URL('@/assets/logos/work/clg.png', import.meta.url)
+const jobreelLogo = new URL('@/assets/logos/work/jobreel.png', import.meta.url).href
+const misfitsLogo = new URL('@/assets/logos/work/misfits.png', import.meta.url).href
+const msgLogo = new URL('@/assets/logos/work/msg-dark.png', import.meta.url).href
+const clgLogo = new URL('@/assets/logos/work/clg.png', import.meta.url).href
 
 interface Job {
   companyKey: string
@@ -9,7 +9,7 @@ interface Job {
   descriptionKey: string
   startYear: string
   endYear: string
-  icon: URL
+  icon: string
   needsIconInvert?: boolean
 }
 
