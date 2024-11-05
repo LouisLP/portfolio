@@ -39,7 +39,7 @@ onMounted(async () => {
                       class="flex items-center justify-between"
                     >
                       <RouterLink
-                        to="/vue-portfolio/"
+                        to="/"
                         id="back-button-to-home"
                         class="group inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
                       >
@@ -86,10 +86,7 @@ onMounted(async () => {
 
                     <div v-else class="py-10 text-center">
                       <h2 class="text-xl text-zinc-800 dark:text-zinc-100">Article not found</h2>
-                      <RouterLink
-                        to="/vue-portfolio/"
-                        class="mt-4 text-teal-500 hover:text-teal-600"
-                      >
+                      <RouterLink to="/" class="mt-4 text-teal-500 hover:text-teal-600">
                         Return to home
                       </RouterLink>
                     </div>
