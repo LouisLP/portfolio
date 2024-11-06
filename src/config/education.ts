@@ -1,4 +1,4 @@
-const ubcLogo = new URL('/assets/logos/education/ubc.png', import.meta.url).href
+import ubcLogo from '/assets/logos/education/ubc.png'
 import ubcLogoDark from '/assets/logos/education/ubc-dark.png'
 import sfuLogo from '/assets/logos/education/sfu.png'
 import sfuIatLogo from '/assets/logos/education/sfu-iat.png'
