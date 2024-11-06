@@ -1,7 +1,7 @@
-import ubcLogo from '/assets/logos/education/ubc.png'
-import ubcLogoDark from '/assets/logos/education/ubc-dark.png'
-import sfuLogo from '/assets/logos/education/sfu.png'
-import sfuIatLogo from '/assets/logos/education/sfu-iat.png'
+import ubcLogo from 'assets/logos/education/ubc.png'
+import ubcLogoDark from 'assets/logos/education/ubc-dark.png'
+import sfuLogo from 'assets/logos/education/sfu.png'
+import sfuIatLogo from 'assets/logos/education/sfu-iat.png'
 
 interface Education {
   schoolKey: string
