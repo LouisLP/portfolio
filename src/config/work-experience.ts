@@ -1,7 +1,7 @@
-import jobreelLogo from '@/assets/logos/work/jobreel.png'
-import misfitsLogo from '@/assets/logos/work/misfits.png'
-import msgLogo from '@/assets/logos/work/msg-dark.png'
-import clgLogo from '@/assets/logos/work/clg.png'
+import jobreelLogo from '/assets/logos/work/jobreel.png'
+import misfitsLogo from '/assets/logos/work/misfits.png'
+import msgLogo from '/assets/logos/work/msg-dark.png'
+import clgLogo from '/assets/logos/work/clg.png'
 
 interface Job {
   companyKey: string

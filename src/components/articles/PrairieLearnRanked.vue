@@ -2,10 +2,10 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-import plrElusive100 from '@/assets/article-images/prairielearn-ranked/PLR-elusive-100.png'
-import plrBurnup from '@/assets/article-images/prairielearn-ranked/PLR-burnup.jpg'
-import plrScoreboards from '@/assets/article-images/prairielearn-ranked/PLR-scoreboards.png'
-import plrMakeDev from '@/assets/article-images/prairielearn-ranked/PLR-make-dev.png'
+import plrElusive100 from '/assets/article-images/prairielearn-ranked/PLR-elusive-100.png'
+import plrBurnup from '/assets/article-images/prairielearn-ranked/PLR-burnup.jpg'
+import plrScoreboards from '/assets/article-images/prairielearn-ranked/PLR-scoreboards.png'
+import plrMakeDev from '/assets/article-images/prairielearn-ranked/PLR-make-dev.png'
 
 interface Section {
   title?: string
