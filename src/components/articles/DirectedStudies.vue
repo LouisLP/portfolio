@@ -2,9 +2,9 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-import onlinePaper from '/assets/article-images/directed-studies/online-paper.png'
-import liveScoreboard from '/assets/article-images/directed-studies/live-scoreboard.png'
-import helloWorld from '/assets/article-images/directed-studies/hello-world.png'
+import onlinePaper from '@/assets/article-images/directed-studies/online-paper.png'
+import liveScoreboard from '@/assets/article-images/directed-studies/live-scoreboard.png'
+import helloWorld from '@/assets/article-images/directed-studies/hello-world.png'
 
 interface Section {
   title?: string
