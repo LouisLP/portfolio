@@ -2,7 +2,7 @@
 import WorkSection from '@/components/resume/WorkSection.vue'
 import SkillsSection from '@/components/resume/SkillsSection.vue'
 import EducationSection from '@/components/resume/EducationSection.vue'
-import OpenFullResume from '@/components/resume/OpenFullResume.vue'
+import DownloadResumeButton from '@/components/resume/DownloadResumeButton.vue'
 
 const emit = defineEmits(['openResume'])
 
@@ -20,7 +20,7 @@ function openFullResume() {
       <WorkSection />
       <SkillsSection />
       <EducationSection />
-      <OpenFullResume @open-resume="openFullResume()" />
+      <DownloadResumeButton />
     </div>
   </div>
 </template>
