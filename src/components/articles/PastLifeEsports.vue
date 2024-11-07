@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 import { marked } from 'marked'
 
-import clgTwitchcon from '@/assets/article-images/past-lives/CLG-twitchcon.jpg'
-import clgLcs from '@/assets/article-images/past-lives/CLG-LCS.jpeg'
-import mggMadrid from '@/assets/article-images/past-lives/MGG-Madrid.jpg'
-import mggWriting from '@/assets/article-images/past-lives/MGG-writing.jpg'
-import mggBerlinSunset from '@/assets/article-images/past-lives/MGG-Berlin-sunset.jpg'
+import clgTwitchcon from '/assets/article-images/past-lives/CLG-twitchcon.jpg'
+import clgLcs from '/assets/article-images/past-lives/CLG-LCS.jpeg'
+import mggMadrid from '/assets/article-images/past-lives/MGG-Madrid.jpg'
+import mggWriting from '/assets/article-images/past-lives/MGG-writing.jpg'
+import mggBerlinSunset from '/assets/article-images/past-lives/MGG-Berlin-sunset.jpg'
 
 interface Section {
   title?: string
