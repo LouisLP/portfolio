@@ -10,9 +10,18 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // This puts the assets in the root of the dist folder
-  // build: {
-  //   outDir: 'dist',
-  //   assetsDir: '', // Assets will be placed in the /dist/ folder
-  // },
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split('.').at(1)
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+            extType = 'img'
+          }
+          return `assets/${extType}/[name]-[hash][extname]`
+        },
+      },
+    },
+  },
 })
