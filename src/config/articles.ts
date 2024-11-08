@@ -16,13 +16,13 @@ export const articles: Article[] = [
   {
     id: 'directed-studies',
     title: 'Directed Studies & Publication',
-    date: 'June 20, 2024',
-    dateISO: '2024-06-20',
+    date: 'December 20, 2023',
+    dateISO: '2023-12-20',
     path: '/articles/directed-studies',
     blurb: 'An overview of my directed studies project in computer science.',
-    readTime: '8 min read',
+    readTime: '3 min read',
     tags: ['academic', 'publication', 'research'],
-    category: 'Projects',
+    category: 'Research',
     component: () => import('@/components/articles/DirectedStudies.vue'),
   },
   {
