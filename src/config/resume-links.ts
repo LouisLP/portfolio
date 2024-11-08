@@ -22,7 +22,7 @@ export const resumeLinks: ResumeLink[] = [
   },
   {
     name: 'Portfolio',
-    url: 'https://lascelles-palys.com',
+    url: 'https://louislp.github.io/portfolio/',
     icon: 'ri-global-line',
   },
 ]
