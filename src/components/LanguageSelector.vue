@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { CoFr, CoGb, CoDe } from 'oh-vue-icons/icons/co'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
+
 import { SupportedLanguage, switchLanguage } from '@/i18n'
 
 addIcons(CoFr, CoGb, CoDe)
@@ -35,8 +36,8 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
 <template>
   <div ref="selectorRef" class="relative">
     <button
-      @click="isOpen = !isOpen"
       class="flex items-center gap-2 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
+      @click="isOpen = !isOpen"
     >
       <OhVueIcon :name="locale === 'en' ? 'co-gb' : `co-${locale}`" class="h-4 w-4" />
       {{ languages[locale as SupportedLanguage] }}
@@ -60,8 +61,8 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
         <div
           v-for="(name, code) in languages"
           :key="code"
-          @click="() => handleLanguageSwitch(code as SupportedLanguage)"
           class="flex cursor-pointer items-center gap-2 px-4 py-2 text-sm text-zinc-800 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-700"
+          @click="() => handleLanguageSwitch(code as SupportedLanguage)"
         >
           <OhVueIcon :name="code === 'en' ? 'co-gb' : `co-${code}`" class="h-4 w-4" />
           {{ name }}

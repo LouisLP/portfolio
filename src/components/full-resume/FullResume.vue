@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
+import { BiGithub, BiLinkedin } from 'oh-vue-icons/icons/bi'
 import { IoClose, IoPrint } from 'oh-vue-icons/icons/io'
 import { RiGlobalLine, RiMailLine } from 'oh-vue-icons/icons/ri'
-import { BiGithub, BiLinkedin } from 'oh-vue-icons/icons/bi'
-import SkillsSection from '@/components/resume/SkillsSection.vue'
-import EducationSection from '@/components/resume/EducationSection.vue'
-import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
-import { resumeLinks } from '@/config/resume-links'
-import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
 import { useRouter } from 'vue-router'
+
+import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
+import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
+import EducationSection from '@/components/resume/EducationSection.vue'
+import SkillsSection from '@/components/resume/SkillsSection.vue'
+import { resumeLinks } from '@/config/resume-links'
+
 
 addIcons(IoClose, IoPrint, BiGithub, BiLinkedin, RiGlobalLine, RiMailLine)
 
@@ -32,10 +34,10 @@ const handlePrint = () => {
       <div class="rounded-lg bg-white p-8 dark:bg-zinc-900 dark:print:bg-white">
         <!-- Controls -->
         <div class="absolute right-4 top-4 flex gap-2 p-4 print:hidden">
-          <button @click="handlePrint" class="text-zinc-400 hover:text-zinc-500">
+          <button class="text-zinc-400 hover:text-zinc-500" @click="handlePrint">
             <OhVueIcon name="io-print" class="size-6" />
           </button>
-          <button @click="closeFullResume()" class="text-zinc-400 hover:text-zinc-500">
+          <button class="text-zinc-400 hover:text-zinc-500" @click="closeFullResume()">
             <OhVueIcon name="io-close" class="size-6" />
           </button>
         </div>

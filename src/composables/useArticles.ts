@@ -1,4 +1,5 @@
 import { ref, computed } from 'vue'
+
 import type { Article, ArticleMetadata } from '@/types/Article'
 
 export function useArticles() {

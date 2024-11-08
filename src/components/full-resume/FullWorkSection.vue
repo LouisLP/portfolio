@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { MdWorkoutlineRound } from 'oh-vue-icons/icons/md'
+
 import { jobs } from '@/config/work-experience'
 
 addIcons(MdWorkoutlineRound)

@@ -1,5 +1,6 @@
-import { ref, computed } from "vue";
 import { defineStore } from "pinia";
+import { ref, computed } from "vue";
+
 import type { Project, Skill, Experience } from "@/types";
 
 export const usePortfolioStore = defineStore("portfolio", () => {

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import { MdSchoolRound } from 'oh-vue-icons/icons/md'
+
 import { education } from '@/config/education'
 
 addIcons(MdSchoolRound)

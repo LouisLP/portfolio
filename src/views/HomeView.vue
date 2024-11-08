@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
+import ArticlePreview from '@/components/articles/ArticlePreview.vue'
+import FullResume from '@/components/full-resume/FullResume.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
+import ShortResume from '@/components/resume/ShortResume.vue'
 import Header from '@/components/TrustyHeader.vue'
 import Photos from '@/components/TrustyPhotos.vue'
-import FullResume from '@/components/full-resume/FullResume.vue'
-import ArticlePreview from '@/components/articles/ArticlePreview.vue'
-import ShortResume from '@/components/resume/ShortResume.vue'
 import { articles } from '@/config/articles'
-import { ref } from 'vue'
 
 const showFullResume = ref(false)
 
@@ -31,10 +33,11 @@ function closeFullResume() {
     <!-- Content -->
     <div class="relative flex w-full flex-col">
       <main class="flex-auto">
-        <!-- Full Resume -->
+        <!-- Full Resume (on dev) -->
         <FullResume v-if="showFullResume" @close-full-resume="closeFullResume()" />
-
+        <!-- Header -->
         <Header />
+        <!-- Photos -->
         <Photos />
         <div class="mt-24 sm:px-8 md:mt-28">
           <div class="mx-auto w-full max-w-7xl lg:px-8">
@@ -44,7 +47,10 @@ function closeFullResume() {
                   class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2"
                 >
                   <!-- Resume -->
-                  <ShortResume @open-resume="openFullResume()" />
+                  <div>
+                    <LanguageSelector />
+                    <ShortResume @open-resume="openFullResume()" />
+                  </div>
                   <!-- Articles -->
                   <section id="article-preview-section" class="space-y-10">
                     <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">

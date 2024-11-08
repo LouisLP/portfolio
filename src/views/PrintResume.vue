@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
-import { RiGlobalLine, RiMailLine } from 'oh-vue-icons/icons/ri'
 import { BiGithub, BiLinkedin } from 'oh-vue-icons/icons/bi'
-import FullSkillsSection from '@/components/full-resume/FullSkillsSection.vue'
+import { RiGlobalLine, RiMailLine } from 'oh-vue-icons/icons/ri'
+import { onMounted } from 'vue'
+
 import FullEducationSection from '@/components/full-resume/FullEducationSection.vue'
+import FullSkillsSection from '@/components/full-resume/FullSkillsSection.vue'
 import FullWorkSection from '@/components/full-resume/FullWorkSection.vue'
 import ProjectsSection from '@/components/full-resume/ProjectsSection.vue'
 import { resumeLinks } from '@/config/resume-links'

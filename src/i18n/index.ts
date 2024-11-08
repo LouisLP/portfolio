@@ -1,8 +1,9 @@
 // src/i18n/index.ts
 import { createI18n } from 'vue-i18n'
+
+import de from '@/i18n/locales/de.ts'
 import en from '@/i18n/locales/en.ts'
 import fr from '@/i18n/locales/fr.ts'
-import de from '@/i18n/locales/de.ts'
 
 const messages = { en, fr, de }
 

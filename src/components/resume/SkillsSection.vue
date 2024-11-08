@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import { PxHumanHeight } from 'oh-vue-icons/icons/px'
+
 import { skills } from '@/config/skills'
 
 addIcons(PxHumanHeight)

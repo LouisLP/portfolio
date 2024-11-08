@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { MdTerminalRound } from 'oh-vue-icons/icons/md'
+
 import { projects } from '@/config/projects'
 
 addIcons(MdTerminalRound)

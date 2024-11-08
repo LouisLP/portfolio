@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { RiSunLine, RiMoonLine } from 'oh-vue-icons/icons/ri'
+import { ref, onMounted } from 'vue'
 
 addIcons(RiSunLine, RiMoonLine)
 
@@ -31,9 +31,9 @@ onMounted(() => {
 
 <template>
   <button
-    @click="toggleTheme"
     class="rounded-lg bg-zinc-50 p-[0.4rem] text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
     :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+    @click="toggleTheme"
   >
     <OhVueIcon :name="isDark ? 'ri-sun-line' : 'ri-moon-line'" class="size-5" />
   </button>
