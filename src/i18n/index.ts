@@ -18,14 +18,14 @@ export const switchLanguage = (lang: SupportedLanguage) => {
   console.info(`Switched to "${lang}" language`)
 }
 
-const getBrowserLocale = (): SupportedLanguage => {
-  const navigatorLocale = navigator.language.split('-')[0]
-  return navigatorLocale in messages ? (navigatorLocale as SupportedLanguage) : SupportedLanguage.en
-}
+// const getBrowserLocale = (): SupportedLanguage => {
+//   const navigatorLocale = navigator.language.split('-')[0]
+//   return navigatorLocale in messages ? (navigatorLocale as SupportedLanguage) : SupportedLanguage.en
+// }
 
 export const i18n = createI18n({
   legacy: false,
-  locale: getBrowserLocale(),
+  locale: SupportedLanguage.en,
   fallbackLocale: SupportedLanguage.en,
   messages,
 })
