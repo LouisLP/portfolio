@@ -15,7 +15,7 @@ function openFullResume() {
   <div class="mb-10 space-y-10 lg:pr-16 xl:pr-24">
     <div
       @click="openFullResume()"
-      class="cursor-pointer rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+      class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
       <WorkSection />
       <SkillsSection />

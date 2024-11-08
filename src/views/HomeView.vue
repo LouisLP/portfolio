@@ -10,7 +10,9 @@ import { ref } from 'vue'
 const showFullResume = ref(false)
 
 function openFullResume() {
-  showFullResume.value = true
+  if (import.meta.env.MODE === 'development') {
+    showFullResume.value = true
+  }
 }
 
 function closeFullResume() {
