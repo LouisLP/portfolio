@@ -30,44 +30,25 @@ The following is a reflection on my time at Jobreel, the challenges I had, and t
   },
   {
     title: 'The Beginning',
-    content: `As with any new job, the first few weeks were spent getting acquainted with the codebase, the tech stack, and the team. My first task was to implement \`i18n\` internationalization support across the entire frontend, as Jobreel was originally only offered in German. This was the best starting task I could've asked for, as it was a great way to get to know the codebase by touching almost every file. What used to be an overwhelming amount of code became familiar territory.
+    content: `As with any new job, the first few weeks were spent getting acquainted with the codebase, the tech stack, and the team. My first task was to implement <code>i18n</code> internationalization support across the entire frontend, as Jobreel was originally only offered in German. This was the best starting task I could've asked for, as it was a great way to get to know the codebase by touching almost every file. What used to be an overwhelming amount of code became familiar territory.
 
-Anytime I ran into a new concept, I would take the time to fully understand it, and then make sure to **document** it. This forced me to understand the concept well enough to explain it to someone else, all while helping future developers in the process.
+Anytime I ran into a new concept, I would take the time to document it — thereby forcing me to understand the concept well enough to explain it to someone else, all while helping future developers in the process.
 
 As I grew more confident, I began to take on more complex tasks and make suggestions of my own, such as:
 
 - Adding **custom error handling middleware** to the backend, which allowed for more descriptive error messages and status codes to be sent to the frontend.
 - Implementing **usability improvements** and **stylistic changes** to the user application and admin-panel, such as adding the ability to preview matches before signing up for an account.
-- Better **modularization** and **organization** of the entire codebase, including implementing best-practices, which made everything cleaner and easier to understand.`,
+- Better **modularization** and **organization** of the entire codebase, and implementing best-practices for Vue.js, such as: when to make a component or a composable, an interface or a type, a store versus prop-drilling, and more.`,
   },
   {
     title: 'Expertise',
     content: `Throughout my time at Jobreel, I've developed significant expertise across various aspects of modern web development:
 
-**Frontend Development (Vue.js)**
-- Implemented complex state management solutions using Pinia
-- Created reusable components or composables following the Composition API pattern
-- Built responsive and accessible user interfaces using Tailwind CSS
-- Integrated i18n internationalization for multi-language support
+    On the **frontend** side, I've become proficient in Vue.js, using the Composition API and Pinia for state management. I've also worked on making the user interfaces responsive and accessible, either through my own custom-built components, or customizing various component libraries with Tailwind.
 
-**Backend Development (Node.js/Express)**
-- Designed and implemented RESTful APIs with proper error handling
-- Optimized database queries and created complex aggregations
-- Abstracted services and classes for better code organization and easier testing
+    **Backend**-wise, I've become proficient in Node.js with Express, and MongoDB for database management. I've designed and implemented RESTful APIs with proper error handling, optimized database queries, and created (very) complex aggregations. Abstracting services and classes for better code organization and easier testing was also a key focus.
 
-**Database Management (MongoDB)**
-- Designed efficient schema structures for complex data relationships
-- Implemented aggregation pipelines for analytics
-- Managed data migrations 
-
-**DevOps & Infrastructure**
-- Configured CI/CD pipelines with GitHub Actions
-- Set up development environments with Docker
-
-**Project Management**
-- Participated in agile development processes
-- Feature prioritization and ticket planning at sprint meetings
-- Provided extremely detailed pull requests and code reviews`,
+    Lastly, in terms of **project management**, I've always provided extremely detailed pull requests and code reviews, making sure that the codebase is always in a maintainable state.`,
   },
   {
     title: 'Key Projects & Achievements',
@@ -76,21 +57,13 @@ As I grew more confident, I began to take on more complex tasks and make suggest
   },
   {
     title: 'Reflection',
-    content: `Working at Jobreel has been a transformative experience that has significantly shaped my growth as a full-stack developer. The opportunity to work in a small team environment allowed me to take on substantial responsibilities and make meaningful contributions to the product's success.
+    content: `Working at Jobreel has been a transformative experience that has significantly shaped my growth as a developer. The opportunity to work in a small team environment allowed me to take on substantial responsibilities and make extremely meaningful contributions to the product's success.
 
-**Key Learnings:**
-- The importance of documentation and knowledge sharing in a growing team
-- The value of proper architecture and planning in preventing technical debt
-- The balance between perfect code and delivering business value
-- The significance of user feedback in driving product decisions
+    Tobias, the founding developer, is an excellent mentor who provided me with the guidance and support I needed to succeed. He showed me there's something beautiful about creating something so complex to make it look simple.
 
-**Challenges Overcome:**
-- Learning to prioritize tasks effectively in a fast-paced startup environment
-- Managing technical debt while delivering new features
-- Adapting to changing requirements and pivoting quickly when needed
-- Building scalable solutions with limited resources
+    Galen, who joined about half a year after me (mostly as a backend and devops engineer) is a fantastic colleague and person — we complimented eachothers skills greatly, and I'll always remember his dedication to optimization, performance, and clean code.
 
-Working at Jobreel was a great experience; I was able to take on a lot of responsibility and make a real impact on the product. I'm proud of the work I did and will always be grateful for the opportunity to be part of such an innovative and driven team.
+    I'm grateful for the opportunity to have worked at Jobreel, and although I still work there today, I'm excited to see what the future holds with all the lessons I learned from my time here.
 
 <img 
   src="${jobreelTeamEvent}" 
