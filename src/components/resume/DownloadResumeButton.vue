@@ -38,6 +38,6 @@ const handleDownload = async () => {
       name="hi-solid-download"
       class="size-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"
     />
-    {{ $t('downloadResume') }}
+    {{ $t('downloadFullResume') }}
   </button>
 </template>

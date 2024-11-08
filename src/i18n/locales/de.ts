@@ -87,4 +87,5 @@ export default {
         'Abschlussprojekt an der UBC, Erstellung eines Ranking-Systems für die PrairieLearn-Quiz-Plattform, um Studenten dabei zu helfen, ihre Leistung in Live- und asynchronen Einstellungen einzuschätzen.',
     },
   },
+  downloadFullResume: 'Vollständigen Lebenslauf herunterladen',
 } as const

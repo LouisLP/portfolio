@@ -87,4 +87,5 @@ export default {
         "Projet de fin d'études à UCB: création d'un système de classement pour la plateforme de quiz \"PrairieLearn\" afin d'aider les étudiants à évaluer leur performance dans des contextes asynchrones.",
     },
   },
+  downloadFullResume: 'Télécharge CV complet',
 } as const

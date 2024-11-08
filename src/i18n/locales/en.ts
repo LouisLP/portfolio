@@ -87,5 +87,5 @@ export default {
         'Capstone project at UBC, creating a ranking system for the PrairieLearn quizzing platform to help students gauge performance in live and asynchronous settings.',
     },
   },
-  downloadResume: 'Download Full Resume',
+  downloadFullResume: 'Download Full Resume',
 } as const
