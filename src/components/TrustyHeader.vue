@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { BiGithub, BiInstagram, BiLinkedin } from 'oh-vue-icons/icons/bi'
-import { socialLinks } from '@/config/social'
-import LanguageSelector from '@/components/LanguageSelector.vue'
+
 import ThemeToggle from '@/components/ThemeToggle.vue'
+import { socialLinks } from '@/config/social'
 
 addIcons(BiGithub, BiInstagram, BiLinkedin)
 </script>
@@ -18,7 +18,6 @@ addIcons(BiGithub, BiInstagram, BiLinkedin)
             class="invisible absolute right-4 top-0 flex items-center gap-2 sm:visible sm:right-8 lg:right-12"
           >
             <ThemeToggle />
-            <LanguageSelector />
           </div>
           <div class="max-w-2xl">
             <!-- My name -->
