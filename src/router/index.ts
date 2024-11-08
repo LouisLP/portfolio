@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/vue-portfolio/'),
+  history: createWebHistory('/portfolio/'),
   routes,
   scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {

@@ -10,12 +10,12 @@ export const projects: Project[] = [
     titleKey: 'directedStudies',
     descriptionKey: 'directedStudiesDescription',
     year: '2023',
-    url: '/vue-portfolio/articles/directed-studies',
+    url: '/articles/directed-studies',
   },
   {
     titleKey: 'prairieLearnRanked',
     descriptionKey: 'prairieLearnRankedDescription',
     year: '2023',
-    url: '/vue-portfolio/articles/prairielearn-ranked',
+    url: '/articles/prairielearn-ranked',
   },
 ]
