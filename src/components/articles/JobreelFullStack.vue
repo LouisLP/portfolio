@@ -4,6 +4,7 @@ import { marked } from 'marked'
 
 import jobreelTeamEvent from '/assets/article-images/full-stack-jobreel/team-event.jpg'
 import jobreelTeamPhoto from '/assets/article-images/full-stack-jobreel/team-photo.jpg'
+import jobreelMatchPreview from '/assets/article-images/full-stack-jobreel/jobreel-match-previews.png'
 
 interface Section {
   title?: string
@@ -38,7 +39,13 @@ As I grew more confident, I began to take on more complex tasks and make suggest
 
 - Adding **custom error handling middleware** to the backend, which allowed for more descriptive error messages and status codes to be sent to the frontend.
 - Implementing **usability improvements** and **stylistic changes** to the user application and admin-panel, such as adding the ability to preview matches before signing up for an account.
-- Better **modularization** and **organization** of the entire codebase, and implementing best-practices for Vue.js, such as: when to make a component or a composable, an interface or a type, a store versus prop-drilling, and more.`,
+- Better **modularization** and **organization** of the entire codebase, and implementing best-practices for Vue.js, such as: when to make a component or a composable, an interface or a type, a store versus prop-drilling, and more.
+
+<img 
+  src="${jobreelMatchPreview}" 
+  alt="Jobreel web application match preview at end of job quiz" 
+  class="rounded-lg shadow-lg my-8 mx-auto w-4/5" 
+/>`,
   },
   {
     title: 'Expertise',
@@ -49,11 +56,6 @@ On the **frontend** side, I've become proficient in Vue.js, using the Compositio
 **Backend**-wise, I've become proficient in Node.js with Express, and MongoDB for database management. I've designed and implemented RESTful APIs with proper error handling, optimized database queries, and created (very) complex aggregations. Abstracting services and classes for better code organization and easier testing was also a key focus.
 
 Lastly, in terms of **project management**, I've always provided extremely detailed pull requests and code reviews, making sure that the codebase is always in a maintainable state.`,
-  },
-  {
-    title: 'Key Projects & Achievements',
-    content: `During my tenure at Jobreel, I led several significant initiatives that improved both the product and development processes:
-`,
   },
   {
     title: 'Reflection',
