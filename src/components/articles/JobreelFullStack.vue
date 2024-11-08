@@ -44,11 +44,11 @@ As I grew more confident, I began to take on more complex tasks and make suggest
     title: 'Expertise',
     content: `Throughout my time at Jobreel, I've developed significant expertise across various aspects of modern web development:
 
-    On the **frontend** side, I've become proficient in Vue.js, using the Composition API and Pinia for state management. I've also worked on making the user interfaces responsive and accessible, either through my own custom-built components, or customizing various component libraries with Tailwind.
+On the **frontend** side, I've become proficient in Vue.js, using the Composition API and Pinia for state management. I've also worked on making the user interfaces responsive and accessible, either through my own custom-built components, or customizing various component libraries with Tailwind.
 
-    **Backend**-wise, I've become proficient in Node.js with Express, and MongoDB for database management. I've designed and implemented RESTful APIs with proper error handling, optimized database queries, and created (very) complex aggregations. Abstracting services and classes for better code organization and easier testing was also a key focus.
+**Backend**-wise, I've become proficient in Node.js with Express, and MongoDB for database management. I've designed and implemented RESTful APIs with proper error handling, optimized database queries, and created (very) complex aggregations. Abstracting services and classes for better code organization and easier testing was also a key focus.
 
-    Lastly, in terms of **project management**, I've always provided extremely detailed pull requests and code reviews, making sure that the codebase is always in a maintainable state.`,
+Lastly, in terms of **project management**, I've always provided extremely detailed pull requests and code reviews, making sure that the codebase is always in a maintainable state.`,
   },
   {
     title: 'Key Projects & Achievements',
@@ -59,11 +59,11 @@ As I grew more confident, I began to take on more complex tasks and make suggest
     title: 'Reflection',
     content: `Working at Jobreel has been a transformative experience that has significantly shaped my growth as a developer. The opportunity to work in a small team environment allowed me to take on substantial responsibilities and make extremely meaningful contributions to the product's success.
 
-    Tobias, the founding developer, is an excellent mentor who provided me with the guidance and support I needed to succeed. He showed me there's something beautiful about creating something so complex to make it look simple.
+Tobias, the founding developer, is an excellent mentor who provided me with the guidance and support I needed to succeed. He showed me there's something beautiful about creating something so complex to make it look simple.
 
-    Galen, who joined about half a year after me (mostly as a backend and devops engineer) is a fantastic colleague and person — we complimented eachothers skills greatly, and I'll always remember his dedication to optimization, performance, and clean code.
+Galen, who joined about half a year after me (mostly as a backend and devops engineer) is a fantastic colleague and person — we complimented eachothers skills greatly, and I'll always remember his dedication to optimization, performance, and clean code.
 
-    I'm grateful for the opportunity to have worked at Jobreel, and although I still work there today, I'm excited to see what the future holds with all the lessons I learned from my time here.
+I'm grateful for the opportunity to have worked at Jobreel, and although I still work there today, I'm excited to see what the future holds with all the lessons I learned from my time here.
 
 <img 
   src="${jobreelTeamEvent}" 
