@@ -10,9 +10,10 @@ import Photos from '@/components/TrustyPhotos.vue'
 import { articles } from '@/config/articles'
 
 const showFullResume = ref(false)
+const isDevelopment = import.meta.env.MODE === 'development'
 
 function openFullResume() {
-  if (import.meta.env.MODE === 'development') {
+  if (isDevelopment) {
     showFullResume.value = true
   }
 }
@@ -48,7 +49,7 @@ function closeFullResume() {
                 >
                   <!-- Resume -->
                   <div>
-                    <LanguageSelector />
+                    <LanguageSelector v-if="isDevelopment" />
                     <ShortResume @open-resume="openFullResume()" />
                   </div>
                   <!-- Articles -->

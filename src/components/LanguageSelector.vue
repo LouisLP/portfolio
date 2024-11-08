@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { CoFr, CoGb, CoDe } from 'oh-vue-icons/icons/co'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { CoDe, CoFr, CoGb } from 'oh-vue-icons/icons/co'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { SupportedLanguage, switchLanguage } from '@/i18n'
@@ -34,7 +34,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
 </script>
 
 <template>
-  <div ref="selectorRef" class="relative">
+  <div ref="selectorRef" class="relative w-fit">
     <button
       class="flex items-center gap-2 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
       @click="isOpen = !isOpen"
@@ -56,7 +56,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
     >
       <div
         v-if="isOpen"
-        class="absolute right-0 mt-2 w-40 rounded-lg bg-white shadow-lg dark:bg-zinc-800"
+        class="absolute right-0 z-50 mt-2 w-40 rounded-lg bg-white shadow-lg dark:bg-zinc-800"
       >
         <div
           v-for="(name, code) in languages"
