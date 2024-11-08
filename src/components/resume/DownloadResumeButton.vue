@@ -7,7 +7,7 @@ addIcons(HiSolidDownload)
 const handleDownload = async () => {
   try {
     console.info('Downloading resume...')
-    const response = await fetch('/portfolio/downloads/Resume_Louis-Lascelles-Palys.pdf')
+    const response = await fetch('/portfolio/downloads/CV.pdf')
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
