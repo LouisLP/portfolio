@@ -53,7 +53,7 @@ function closeFullResume() {
                     <ShortResume @open-resume="openFullResume()" />
                   </div>
                   <!-- Articles -->
-                  <section id="article-preview-section" class="space-y-14">
+                  <section id="article-preview-section" class="space-y-10">
                     <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
                       Projects & Reflections
                     </h2>
