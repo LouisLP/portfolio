@@ -6,7 +6,11 @@ import berlin1 from '/assets/pics/berlin_1.jpg'
 
 interface Photo {
   src: string
+  srcset?: string
+  webp?: string
+  blur?: string
   rotate: string
+  alt?: string
 }
 
 export const photos: Photo[] = [
