@@ -2,6 +2,11 @@
 
 A modern, responsive portfolio website built with Vue 3 and TypeScript, featuring dark mode, internationalization, and a clean, minimalist design. Tailwind is used throughout and built-upon an existing template.
 
+The main purpose of the site is twofold:
+
+1. To showcase my work and experience as a software developer
+2. To serve as a resume exporter for myself on development
+
 ## Technologies
 
 - **Frontend Framework**: Vue 3 with TypeScript
