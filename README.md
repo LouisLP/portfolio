@@ -1,6 +1,6 @@
 # Louis' Portfolio
 
-A modern, responsive portfolio website built with Vue 3 and TypeScript, featuring dark mode, internationalization, and a clean, minimalist design.
+A modern, responsive portfolio website built with Vue 3 and TypeScript, featuring dark mode, internationalization, and a clean, minimalist design. Tailwind is used throughout and built-upon an existing template.
 
 ## Technologies
 
