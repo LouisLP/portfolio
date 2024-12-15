@@ -9,11 +9,11 @@ addIcons(MdSchoolRound)
 
 <template>
   <div>
-    <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <h2 class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">{{ $t('education.title') }}</span>
     </h2>
-    <ol class="mt-6 space-y-4">
+    <ol class="mt-4 space-y-4">
       <li v-for="edu in educationForPrint" :key="edu.schoolKey" class="flex items-start gap-4">
         <div
           class="relative flex h-10 w-10 flex-none items-center justify-center rounded-md shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"

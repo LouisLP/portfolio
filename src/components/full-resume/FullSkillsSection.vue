@@ -9,19 +9,19 @@ addIcons(PxHumanHeight)
 
 <template>
   <div>
-    <h2 class="mt-10 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <h2 class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <OhVueIcon name="px-human-height" class="size-6 dark:text-zinc-400" />
       <span class="ml-3">{{ $t('skills.title') }}</span>
     </h2>
 
-    <div class="mt-6 space-y-6">
+    <div class="mt-4 space-y-6">
       <div v-for="category in skills" :key="category.categoryTitleKey">
         <!-- Skill category's title -->
         <h3 class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
           {{ $t(`skills.categories.${category.categoryTitleKey}`) }}
         </h3>
         <!-- Each skill in each category -->
-        <ul class="mt-2 flex flex-wrap gap-2">
+        <ul class="mt-2 flex flex-wrap gap-1">
           <li
             v-for="skill in category.skills"
             :id="`skill-${skill.skillKey}`"

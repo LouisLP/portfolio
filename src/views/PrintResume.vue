@@ -24,7 +24,7 @@ onMounted(() => {
       <!-- Name -->
       <h1 class="mb-2 text-3xl font-bold text-zinc-900">Louis Lascelles-Palys</h1>
       <!-- Links -->
-      <div class="mb-8 flex gap-4 text-sm text-zinc-600">
+      <div class="mb-8 flex gap-3 text-xs text-zinc-600">
         <a
           v-for="link in resumeLinks"
           :key="link.name"
@@ -38,7 +38,7 @@ onMounted(() => {
       <!-- Sections -->
       <div>
         <FullWorkSection />
-        <div class="grid grid-cols-2 gap-8">
+        <div class="grid grid-cols-2 gap-6">
           <div class="space-y-8">
             <FullEducationSection />
             <ProjectsSection />

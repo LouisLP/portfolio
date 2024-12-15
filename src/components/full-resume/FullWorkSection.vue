@@ -15,7 +15,7 @@ addIcons(MdWorkoutlineRound)
       <span class="ml-3">{{ $t('work.title') }}</span>
     </h2>
     <!-- Jobs -->
-    <ol class="mt-6 space-y-4">
+    <ol class="mt-4 space-y-4">
       <li v-for="job in jobs" :key="job.companyKey" class="flex items-start gap-4">
         <div
           class="relative flex h-10 w-10 flex-none items-center justify-center rounded-md shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"

@@ -17,13 +17,17 @@ interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    categoryTitleKey: 'languages',
+    categoryTitleKey: 'core',
     skills: [
       { skillKey: 'typescriptJavascript', level: SkillLevel.Intermediate, years: 2 },
-      { skillKey: 'sql', level: SkillLevel.Advanced, years: 4 },
       { skillKey: 'python', level: SkillLevel.Intermediate, years: 3 },
-      // { skillKey: 'Java', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'sql', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'java', level: SkillLevel.Intermediate, years: 2 },
       { skillKey: 'cPlusPlus', level: SkillLevel.Beginner, years: 1 },
+      { skillKey: 'git', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'ciCd', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'testing', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'documentation', level: SkillLevel.Intermediate, years: 2 },
     ],
   },
   {
@@ -31,17 +35,17 @@ export const skills: SkillCategory[] = [
     skills: [
       { skillKey: 'vueJs', level: SkillLevel.Intermediate, years: 1 },
       { skillKey: 'reactJs', level: SkillLevel.Intermediate, years: 1 },
+      // { skillKey: 'svelteJs', level: SkillLevel.Intermediate, years: 1 },
       { skillKey: 'htmlCss', level: SkillLevel.Expert, years: 5 },
       { skillKey: 'tailwindCss', level: SkillLevel.Advanced, years: 2 },
     ],
   },
   {
-    categoryTitleKey: 'backendAndDevOps',
+    categoryTitleKey: 'backendDevelopment',
     skills: [
       { skillKey: 'nodeJs', level: SkillLevel.Advanced, years: 3 },
+      { skillKey: 'apiDevelopment', level: SkillLevel.Advanced, years: 3 },
       { skillKey: 'docker', level: SkillLevel.Intermediate, years: 2 },
-      { skillKey: 'ciCd', level: SkillLevel.Intermediate, years: 2 },
-      { skillKey: 'git', level: SkillLevel.Advanced, years: 4 },
     ],
   },
   {
@@ -50,6 +54,8 @@ export const skills: SkillCategory[] = [
       { skillKey: 'mySql', level: SkillLevel.Advanced, years: 3 },
       { skillKey: 'postgreSql', level: SkillLevel.Advanced, years: 3 },
       { skillKey: 'mongoDb', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'dbDesign', level: SkillLevel.Intermediate, years: 2 },
+      { skillKey: 'dbMigration', level: SkillLevel.Intermediate, years: 2 },
     ],
   },
   {
@@ -58,6 +64,8 @@ export const skills: SkillCategory[] = [
       { skillKey: 'videoEditing', level: SkillLevel.Expert, years: 11 },
       { skillKey: 'motionGraphics', level: SkillLevel.Expert, years: 8 },
       { skillKey: 'photography', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'uiUxDesign', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'adobeCreativeSuite', level: SkillLevel.Expert, years: 10 },
     ],
   },
 ]

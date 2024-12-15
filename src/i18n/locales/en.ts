@@ -34,10 +34,10 @@ export default {
   skills: {
     title: 'Skills',
     categories: {
-      languages: 'Languages',
+      core: 'Languages & Core Skills',
       frontendDevelopment: 'Frontend Development',
-      backendAndDevOps: 'Backend & DevOps',
-      databases: 'Databases',
+      backendDevelopment: 'Backend Development',
+      databases: 'Database Technologies',
       creative: 'Creative',
     },
     skills: {
@@ -45,20 +45,29 @@ export default {
       sql: 'SQL',
       python: 'Python',
       cPlusPlus: 'C++',
-      vueJs: 'Vue.js',
-      reactJs: 'React.js',
+      java: 'Java',
+      ciCd: 'CI/CD',
+      git: 'Git',
+      testing: 'Testing',
+      documentation: 'Documentation',
+      vueJs: 'Vue',
+      reactJs: 'React',
+      svelteJs: 'Svelte',
       htmlCss: 'HTML/CSS',
       tailwindCss: 'Tailwind CSS',
       nodeJs: 'Node.js',
       docker: 'Docker',
-      ciCd: 'CI/CD',
-      git: 'Git',
+      apiDevelopment: 'API Development',
       mySql: 'MySQL',
       postgreSql: 'PostgreSQL',
       mongoDb: 'MongoDB',
+      dbDesign: 'Database Design',
+      dbMigration: 'Database Migrations',
       videoEditing: 'Video Editing',
       motionGraphics: 'Motion Graphics',
       photography: 'Photography',
+      uiUxDesign: 'UI/UX Design',
+      adobeCreativeSuite: 'Adobe Creative Suite',
     },
   },
   education: {
@@ -77,12 +86,12 @@ export default {
   projects: {
     title: 'Projects',
     titles: {
-      directedStudies: 'Directed Studies & Publication',
+      directedStudies: 'Publication & Directed Studies',
       prairieLearnRanked: 'PrairieLearn Ranked',
     },
     descriptions: {
       directedStudiesDescription:
-        'Directed studies at UBC under Dr. Ramon Lawrence — gaining industry-level experience in system administration and backend development. Later co-authored a paper titled "Live Session Gamification using PrairieLearn"',
+        'Directed studies at UBC under Dr. Ramon Lawrence — gaining industry-level experience in system administration and backend development. Later co-authored a paper titled "Live Session Gamification using PrairieLearn".',
       prairieLearnRankedDescription:
         'Capstone project at UBC, creating a ranking system for the PrairieLearn quizzing platform to help students gauge performance in live and asynchronous settings.',
     },

@@ -34,7 +34,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
 </script>
 
 <template>
-  <div ref="selectorRef" class="relative w-fit">
+  <div ref="selectorRef" class="relative mb-3 w-fit">
     <button
       class="flex items-center gap-2 rounded-lg bg-zinc-50 px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800"
       @click="isOpen = !isOpen"
