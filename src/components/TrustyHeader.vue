@@ -13,10 +13,8 @@ addIcons(BiGithub, BiInstagram, BiLinkedin)
     <div class="mx-auto w-full max-w-7xl lg:px-8">
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
-          <div
-            id="selector-container"
-            class="invisible absolute right-4 top-0 flex items-center gap-2 sm:visible sm:right-8 lg:right-12"
-          >
+          <div id="selector-container" class="flex w-full items-end justify-between">
+            <div />
             <ThemeToggle />
           </div>
           <div class="max-w-2xl">
