@@ -2,7 +2,7 @@ export default {
   header: {
     name: 'Louis Lascelles-Palys',
     blurb:
-      'Canadian developer living in Berlin, Germany. Previously a professional video editor in Berlin and Los Angeles for the gaming industry.',
+      'Canadian developer living in Berlin, Germany. Previously a professional video editor and motion designer in Berlin and Los Angeles for the gaming industry.',
   },
   work: {
     title: 'Work Experience',
