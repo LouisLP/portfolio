@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { marked } from 'marked'
+import { ref } from 'vue'
 
-import clgTwitchcon from '/assets/article-images/past-lives/CLG-twitchcon.jpg'
 import clgLcs from '/assets/article-images/past-lives/CLG-LCS.jpeg'
+import clgTwitchcon from '/assets/article-images/past-lives/CLG-twitchcon.jpg'
+import mggBerlinSunset from '/assets/article-images/past-lives/MGG-Berlin-sunset.jpg'
 import mggMadrid from '/assets/article-images/past-lives/MGG-Madrid.jpg'
 import mggWriting from '/assets/article-images/past-lives/MGG-writing.jpg'
-import mggBerlinSunset from '/assets/article-images/past-lives/MGG-Berlin-sunset.jpg'
 
 interface Section {
   title?: string
@@ -69,7 +69,7 @@ The European League of Legends teams had their turn for franchising around this 
 
 The Misfits Gaming Group, the parent company of Misfits, expanded its reach by bringing in various teams and personalities, including the [Florida Mayhem](https://liquipedia.net/overwatch/Florida_Mayhem) in the Overwatch League, the [Florida Mutineers](https://cod-esports.fandom.com/wiki/Florida_Mutineers) in the Call of Duty League, as well as notable Fortnite personalities, such as Sceptic and Clix. My role involved content creation for these teams and players based in Florida. While I was making progress, I often felt restricted in expressing my creativity and focusing on projects that truly excited me.
 
-Around a year and a half into my time in Berlin, the COVID-19 outbreak prompted a shift to remote work. This unexpected change provided me with time to reflect on the direction of my life. Not only did I develop a deep affection for Berlin, I embraced the European way of life. It became clear that I needed a more stable and predictable career path, with aspirations to ultimately return to Europe. By preserving my creativity as a hobby, I could strike a healthier balance in my life. Consequently, I made the decision to part ways with Misfits after a fulfilling 3-year collaboration, and set my sights on a new journey as a computer scientist.
+Around a year and a half into my time in Berlin, the COVID-19 outbreak prompted a shift to remote work. This unexpected change provided me with time to reflect on the direction of my life. Not only did I develop a deep affection for Berlin, I embraced the European way of life. It became clear that I needed a more stable and predictable career path, with aspirations to ultimately return to Europe. By preserving my creativity as a hobby, I could strike a healthier balance in my life. Consequently, I made the decision to part ways with Misfits after a fulfilling 3-years, and set my sights on a new journey in computer science.
 
 <img 
   src="${mggBerlinSunset}" 
