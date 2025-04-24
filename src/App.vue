@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+
+import TrustyNav from '@/components/TrustyNav.vue'
 </script>
 
 <template>
@@ -7,6 +9,7 @@ import { RouterView } from 'vue-router'
     <!-- Content -->
     <div class="relative flex w-full flex-col">
       <main class="flex-auto">
+        <TrustyNav class="invisible sm:visible" />
         <RouterView />
       </main>
     </div>

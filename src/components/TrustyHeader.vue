@@ -2,7 +2,6 @@
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
 import { BiGithub, BiInstagram, BiLinkedin } from 'oh-vue-icons/icons/bi'
 
-import ThemeToggle from '@/components/ThemeToggle.vue'
 import { socialLinks } from '@/config/social'
 
 addIcons(BiGithub, BiInstagram, BiLinkedin)
@@ -13,15 +12,11 @@ addIcons(BiGithub, BiInstagram, BiLinkedin)
     <div class="mx-auto w-full max-w-7xl lg:px-8">
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
-          <div id="selector-container" class="flex w-full items-end justify-between">
-            <div />
-            <ThemeToggle />
-          </div>
           <div class="max-w-2xl">
             <!-- My name -->
             <h1
               id="name"
-              class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"
+              class="mt-20 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"
             >
               {{ $t('header.name') }}
             </h1>

@@ -2,7 +2,6 @@
 import { computed, markRaw, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import ThemeToggle from '@/components/ThemeToggle.vue'
 import { articles } from '@/config/articles'
 
 const route = useRoute()
@@ -46,7 +45,6 @@ onMounted(async () => {
                       >
                         ← Back
                       </RouterLink>
-                      <ThemeToggle />
                     </div>
 
                     <article v-if="article">
