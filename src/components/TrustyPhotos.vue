@@ -8,7 +8,7 @@ import { photos } from '@/config/photos'
       <div
         v-for="(photo, index) in photos"
         :key="index"
-        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 transition-all hover:rotate-0 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
         :class="photo.rotate"
       >
         <img
