@@ -1,8 +1,8 @@
-import japan1 from '/assets/pics/japan_1.jpeg'
-import pacificSpirit from '/assets/pics/pacific_spirit.jpg'
-import misfits from '/assets/pics/misfits_black_bg.jpeg'
-import konigssee from '/assets/pics/konigssee.jpg'
-import berlin1 from '/assets/pics/berlin_1.jpg'
+import berlin1 from '/assets/pics/berlin_1.webp'
+import japan1 from '/assets/pics/japan_1.webp'
+import konigssee from '/assets/pics/konigssee.webp'
+import misfits from '/assets/pics/misfits_black_bg.webp'
+import pacificSpirit from '/assets/pics/pacific_spirit.webp'
 
 interface Photo {
   src: string
