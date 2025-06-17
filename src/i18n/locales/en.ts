@@ -67,6 +67,7 @@ export default {
       motionGraphics: 'Motion Graphics',
       photography: 'Photography',
       uiUxDesign: 'UI/UX Design',
+      figma: 'Figma',
       adobeCreativeSuite: 'Adobe Creative Suite',
     },
   },

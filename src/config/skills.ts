@@ -65,6 +65,7 @@ export const skills: SkillCategory[] = [
       { skillKey: 'motionGraphics', level: SkillLevel.Expert, years: 8 },
       { skillKey: 'photography', level: SkillLevel.Advanced, years: 4 },
       { skillKey: 'uiUxDesign', level: SkillLevel.Advanced, years: 4 },
+      { skillKey: 'figma', level: SkillLevel.Advanced, years: 2 },
       { skillKey: 'adobeCreativeSuite', level: SkillLevel.Expert, years: 10 },
     ],
   },
