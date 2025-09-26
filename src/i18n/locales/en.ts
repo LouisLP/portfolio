@@ -7,6 +7,7 @@ export default {
   work: {
     title: 'Work Experience',
     companies: {
+      agileRobots: 'Agile Robots',
       jobreel: 'Jobreel',
       misfits: 'Misfits Gaming Group',
       msg: 'Madison Square Garden Entertainment',
@@ -14,6 +15,7 @@ export default {
       tempoStorm: 'Tempo Storm',
     },
     roles: {
+      softwareEngineer: 'Software Engineer',
       fullStackDeveloper: 'Full Stack Developer',
       seniorVideoEditorAndMotionDesigner: 'Senior Video Editor & Motion Designer',
       videoEditorAndDesigner: 'Video Editor & Designer',
@@ -21,14 +23,20 @@ export default {
       writer: 'Writer',
     },
     descriptions: {
+      agileRobotsDescription:
+        'Built a customizable robotics IDE for robot operators using Vue, TypeScript, GraphQL, and Python/Django on the "AgileCore" development team.',
+
       jobreelDescription:
-        "End-to-end development of Jobreel's core application and admin panel, architecting solutions using Vue.js, Node.js, and MongoDB. Drove technical and UI/UX improvements across the full development stack.",
+        'Full-stack development of core job-matching application and admin panel using Vue.js, Node.js, and MongoDB. Led technical and UX improvements across the entire stack.',
+
       misfitsDescription:
-        'Spearheaded video editing and motion design across multiple premier esports divisions, including the LEC, CDL, and OWL teams. Managed and mentored a team of editors while traveling extensively throughout Europe for major competitions. Orchestrated content creation for multiple brand identities within the organization.',
+        'Led video editing and motion design for premier esports teams (in the LEC, CDL, OWL). Managed a team of editors and created content for multiple brand identities across Europe.',
+
       msgDescription:
-        "Produced high-impact video content, motion design, and event designs for one of the world's most renowned entertainment venues upon their acquisition of Counter Logic Gaming.",
+        'Produced video content, motion design, and event materials for world-renowned entertainment venue following their acquisition of Counter Logic Gaming.',
+
       clgDescription:
-        'Created strategic video content for multiple teams across major esports titles, working directly with the CEO and key stakeholders. Produced professional-grade content for both League of Legends and Overwatch divisions, contributing to brand growth and audience engagement.',
+        'Created and edited video content for the League of Legends and Overwatch teams, working directly with the CEO and stakeholders to drive brand growth and engagement.',
     },
   },
   skills: {

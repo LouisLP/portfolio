@@ -26,7 +26,7 @@ addIcons(PxHumanHeight)
             v-for="skill in category.skills"
             :id="`skill-${skill.skillKey}`"
             :key="skill.skillKey"
-            class="rounded-full bg-zinc-100 px-2 py-1 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300"
+            class="rounded-full bg-zinc-100 px-1.5 py-0.5 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300"
           >
             {{ $t(`skills.skills.${skill.skillKey}`) }}
           </li>

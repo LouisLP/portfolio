@@ -1,7 +1,8 @@
+import agileRobotsLogo from '/assets/logos/work/agileRobots.jpg'
+import clgLogo from '/assets/logos/work/clg.png'
 import jobreelLogo from '/assets/logos/work/jobreel.png'
 import misfitsLogo from '/assets/logos/work/misfits.png'
 import msgLogo from '/assets/logos/work/msg-dark.png'
-import clgLogo from '/assets/logos/work/clg.png'
 
 interface Job {
   companyKey: string
@@ -14,6 +15,14 @@ interface Job {
 }
 
 export const jobs: Job[] = [
+  {
+    companyKey: 'agileRobots',
+    roleKey: 'softwareEngineer',
+    descriptionKey: 'agileRobotsDescription',
+    startYear: '2025',
+    endYear: 'Present',
+    icon: agileRobotsLogo,
+  },
   {
     companyKey: 'jobreel',
     roleKey: 'fullStackDeveloper',
