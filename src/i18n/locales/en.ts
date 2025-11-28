@@ -96,15 +96,15 @@ export default {
   projects: {
     title: 'Projects',
     titles: {
-      directedStudies: 'Publication & Directed Studies',
-      prairieLearnRanked: 'PrairieLearn Ranked',
+      agileDataHub: 'Agile Data Hub',
+      prairieLearn: 'PrairieLearn Ranked & Publication',
     },
     descriptions: {
-      directedStudiesDescription:
-        'Directed studies at UBC under Dr. Ramon Lawrence — gaining industry-level experience in system administration and backend development. Later co-authored a paper titled "Live Session Gamification using PrairieLearn".',
-      prairieLearnRankedDescription:
-        'Capstone project at UBC, creating a ranking system for the PrairieLearn quizzing platform to help students gauge performance in live and asynchronous settings.',
-    },
+      agileDataHubDescription:
+        'Marketplace for robot "task" datasets at AgileRobots, enabling users to browse and purchase pre-recorded robot actions. Built with Nuxt, Tailwind, Prisma (SQLite), BetterAuth, and Stripe.',
+      prairieLearnDescription:
+        'Capstone project at UBC creating a ranking system for the PrairieLearn quizzing platform, extended through directed studies under Dr. Ramon Lawrence. Co-authored paper "Live Session Gamification using PrairieLearn".',
+    }
   },
   downloadFullResume: 'Download Full Resume',
 } as const
