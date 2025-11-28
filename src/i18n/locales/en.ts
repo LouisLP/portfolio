@@ -24,7 +24,7 @@ export default {
     },
     descriptions: {
       agileRobotsDescription:
-        'Built a customizable robotics IDE for robot operators using Vue, TypeScript, GraphQL, and Python/Django on the "AgileCore" development team.',
+        'Working on AgileCore\'s IDE team, building a customizable IDE that enables operators to define and adapt robot actions. Using Vue with TypeScript, GraphQL, and Python/Django. Other projects included a data hub (shop) using Nuxt, Prisma (SQLite), BetterAuth, and Stripe.',
 
       jobreelDescription:
         'Full-stack development of core job-matching application and admin panel using Vue.js, Node.js, and MongoDB. Led technical and UX improvements across the entire stack.',
@@ -44,7 +44,7 @@ export default {
     categories: {
       core: 'Languages & Core Skills',
       frontendDevelopment: 'Frontend Development',
-      backendDevelopment: 'Backend Development',
+      backendDevelopment: 'Backend/Meta Development',
       databases: 'Database Technologies',
       creative: 'Creative',
     },
@@ -60,6 +60,7 @@ export default {
       documentation: 'Documentation',
       vueJs: 'Vue',
       reactJs: 'React',
+      nuxt: 'Nuxt',
       svelteJs: 'Svelte',
       htmlCss: 'HTML/CSS',
       tailwindCss: 'Tailwind CSS',
