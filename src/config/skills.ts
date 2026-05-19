@@ -33,10 +33,11 @@ export const skills: SkillCategory[] = [
   {
     categoryTitleKey: 'frontendDevelopment',
     skills: [
-      { skillKey: 'vueJs', level: SkillLevel.Intermediate, years: 1 },
-      { skillKey: 'reactJs', level: SkillLevel.Intermediate, years: 1 },
+      { skillKey: 'vueJs', level: SkillLevel.Intermediate, years: 3 },
+      { skillKey: 'reactJs', level: SkillLevel.Beginner, years: 1 },
       { skillKey: 'htmlCss', level: SkillLevel.Expert, years: 5 },
       { skillKey: 'tailwindCss', level: SkillLevel.Advanced, years: 2 },
+      { skillKey: 'storybook', level: SkillLevel.Beginner, years: 1 },
     ],
   },
   {
@@ -44,7 +45,8 @@ export const skills: SkillCategory[] = [
     skills: [
       { skillKey: 'nodeJs', level: SkillLevel.Advanced, years: 3 },
       { skillKey: 'nuxt', level: SkillLevel.Intermediate, years: 1 },
-      { skillKey: 'apiDevelopment', level: SkillLevel.Advanced, years: 3 },
+      { skillKey: 'django', level: SkillLevel.Beginner, years: 1 },
+      { skillKey: 'graphql', level: SkillLevel.Beginner, years: 1 },
       { skillKey: 'docker', level: SkillLevel.Intermediate, years: 2 },
     ],
   },
