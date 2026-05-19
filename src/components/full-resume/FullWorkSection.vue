@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { MdWorkoutlineRound } from 'oh-vue-icons/icons/md'
+import { OhVueIcon, addIcons } from 'oh-vue-icons';
+import { MdWorkoutlineRound } from 'oh-vue-icons/icons/md';
 
-import { jobs } from '@/config/work-experience'
+import { jobs } from '@/config/work-experience';
 
 addIcons(MdWorkoutlineRound)
 </script>
 
 <template>
-  <div>
+  <section aria-labelledby="work-heading">
     <!-- "Work" header -->
-    <h2 class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <OhVueIcon name="md-workoutline-round" class="dark:text-zinc-400" />
+    <h2 id="work-heading" class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <OhVueIcon name="md-workoutline-round" class="dark:text-zinc-400" aria-hidden="true" />
       <span class="ml-3">{{ $t('work.title') }}</span>
     </h2>
     <!-- Jobs -->
@@ -55,5 +55,5 @@ addIcons(MdWorkoutlineRound)
         </dl>
       </li>
     </ol>
-  </div>
+  </section>
 </template>

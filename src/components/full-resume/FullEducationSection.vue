@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { addIcons, OhVueIcon } from 'oh-vue-icons'
-import { MdSchoolRound } from 'oh-vue-icons/icons/md'
+import { addIcons, OhVueIcon } from 'oh-vue-icons';
+import { MdSchoolRound } from 'oh-vue-icons/icons/md';
 
-import { educationForPrint } from '@/config/education'
+import { educationForPrint } from '@/config/education';
 
 addIcons(MdSchoolRound)
 </script>
 
 <template>
-  <div>
-    <h2 class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" />
+  <section aria-labelledby="education-heading">
+    <h2 id="education-heading" class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <OhVueIcon name="md-school-round" class="size-6 dark:text-zinc-400" aria-hidden="true" />
       <span class="ml-3">{{ $t('education.title') }}</span>
     </h2>
     <ol class="mt-4 space-y-4">
@@ -48,5 +48,5 @@ addIcons(MdSchoolRound)
         </dl>
       </li>
     </ol>
-  </div>
+  </section>
 </template>

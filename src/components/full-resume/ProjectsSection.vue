@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { MdTerminalRound } from 'oh-vue-icons/icons/md'
+import { OhVueIcon, addIcons } from 'oh-vue-icons';
+import { MdTerminalRound } from 'oh-vue-icons/icons/md';
 
-import { projects } from '@/config/projects'
+import { projects } from '@/config/projects';
 
 addIcons(MdTerminalRound)
 </script>
 
 <template>
-  <div>
-    <h2 class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <OhVueIcon name="md-terminal-round" class="dark:text-zinc-400" />
+  <section aria-labelledby="projects-heading">
+    <h2 id="projects-heading" class="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <OhVueIcon name="md-terminal-round" class="dark:text-zinc-400" aria-hidden="true" />
       <span class="ml-3">{{ $t('projects.title') }}</span>
     </h2>
     <ol class="mt-4 space-y-2">
@@ -30,5 +30,5 @@ addIcons(MdTerminalRound)
         </div>
       </li>
     </ol>
-  </div>
+  </section>
 </template>

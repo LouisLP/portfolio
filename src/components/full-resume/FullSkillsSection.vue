@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { addIcons, OhVueIcon } from 'oh-vue-icons'
-import { PxHumanHeight } from 'oh-vue-icons/icons/px'
+import { addIcons, OhVueIcon } from 'oh-vue-icons';
+import { PxHumanHeight } from 'oh-vue-icons/icons/px';
 
-import { skills } from '@/config/skills'
+import { skills } from '@/config/skills';
 
 addIcons(PxHumanHeight)
 </script>
 
 <template>
-  <div>
-    <h2 class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-      <OhVueIcon name="px-human-height" class="size-6 dark:text-zinc-400" />
+  <section aria-labelledby="skills-heading">
+    <h2 id="skills-heading" class="mt-8 flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <OhVueIcon name="px-human-height" class="size-6 dark:text-zinc-400" aria-hidden="true" />
       <span class="ml-3">{{ $t('skills.title') }}</span>
     </h2>
 
@@ -33,5 +33,5 @@ addIcons(PxHumanHeight)
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>

@@ -54,3 +54,11 @@
     @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
   }
 }
+
+@media print {
+  /* Prevent sr-only absolutely-positioned text from appearing
+     out-of-order in the PDF character stream, which confuses ATS parsers */
+  .sr-only {
+    display: none !important;
+  }
+}
