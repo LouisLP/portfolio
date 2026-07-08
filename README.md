@@ -45,6 +45,14 @@ npm run lint
 npm run optimize-images
 ```
 
+## Writing an article
+
+1. Add a markdown file at `src/content/articles/<id>.md` (plain markdown; raw `<img>` tags with Tailwind classes are allowed, using root-relative `/assets/...` paths)
+2. Add a metadata entry with the same `id` to `src/config/articles.ts`
+3. Put any images in `public/assets/article-images/<id>/` and run `npm run optimize-images`
+
+Articles are lazy-loaded per page and automatically sorted newest-first.
+
 ## Deployment
 
 Automatically deployed to GitHub Pages via GitHub Actions when pushing to the main branch.
