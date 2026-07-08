@@ -1,20 +1,23 @@
 <script setup lang="ts">
-import { computed, markRaw, onMounted, ref, type Component } from 'vue'
+import { marked } from 'marked'
+import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { articles } from '@/config/articles'
+import { articles, loadArticleContent } from '@/config/articles'
 
 const route = useRoute()
 
-const articleComponent = ref<Component | null>(null)
+const articleHtml = ref<string | null>(null)
 
 const article = computed(() => articles.find((article) => article.id === route.params.id))
 
 onMounted(async () => {
-  if (article.value?.component) {
-    const module = await article.value.component()
-    articleComponent.value = markRaw(module.default)
-  }
+  if (!article.value) return
+  const markdown = await loadArticleContent(article.value.id)?.()
+  if (!markdown) return
+  // Asset paths in markdown are written root-relative; rebase them onto Vite's base URL
+  const rebased = markdown.replaceAll('src="/assets/', `src="${import.meta.env.BASE_URL}assets/`)
+  articleHtml.value = marked.parse(rebased, { async: false })
 })
 </script>
 
@@ -71,15 +74,12 @@ onMounted(async () => {
                         </div>
                       </header>
 
-                      <div class="prose dark:prose-invert mt-8 mb-28">
-                        <Suspense>
-                          <div class="prose dark:prose-invert mt-8 mb-28">
-                            <component :is="articleComponent" v-if="articleComponent" />
-                            <div v-else class="flex items-center justify-center py-10">
-                              <span class="text-zinc-500">Loading article...</span>
-                            </div>
-                          </div>
-                        </Suspense>
+                      <div class="prose dark:prose-invert mt-8 mb-28 max-w-none">
+                        <!-- eslint-disable-next-line vue/no-v-html -- locally-authored markdown, no user input -->
+                        <div v-if="articleHtml" v-html="articleHtml" />
+                        <div v-else class="flex items-center justify-center py-10">
+                          <span class="text-zinc-500">Loading article...</span>
+                        </div>
                       </div>
                     </article>
 

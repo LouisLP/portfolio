@@ -1,6 +1,4 @@
-import type { Component } from 'vue'
-
-export interface ArticleMetadata {
+export interface Article {
   id: string
   title: string
   date: string
@@ -10,8 +8,4 @@ export interface ArticleMetadata {
   readTime: string
   tags?: string[]
   category?: string
-}
-
-export interface Article extends ArticleMetadata {
-  component: () => Promise<{ default: Component }>
 }

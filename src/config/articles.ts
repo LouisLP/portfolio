@@ -1,6 +1,18 @@
 import type { Article } from '@/types/Article'
 
-export const articles: Article[] = [
+// Article prose lives in src/content/articles/<id>.md — to add an article,
+// drop a markdown file there and add its metadata entry below.
+const articleContent = import.meta.glob('@/content/articles/*.md', {
+  query: '?raw',
+  import: 'default',
+}) as Record<string, () => Promise<string>>
+
+export const loadArticleContent = (id: string): (() => Promise<string>) | undefined => {
+  const key = Object.keys(articleContent).find((path) => path.endsWith(`/${id}.md`))
+  return key ? articleContent[key] : undefined
+}
+
+const articleList: Article[] = [
   {
     id: 'agile-robots',
     title: 'Frontend at Agile Robots',
@@ -11,7 +23,6 @@ export const articles: Article[] = [
     readTime: '4 min read',
     tags: ['career', 'frontend', 'design'],
     category: 'Reflections',
-    component: () => import('@/components/articles/AgileRobots.vue'),
   },
   {
     id: 'full-stack-jobreel',
@@ -23,7 +34,6 @@ export const articles: Article[] = [
     readTime: '4 min read',
     tags: ['career', 'full stack'],
     category: 'Reflections',
-    component: () => import('@/components/articles/JobreelFullStack.vue'),
   },
   {
     id: 'directed-studies',
@@ -35,7 +45,6 @@ export const articles: Article[] = [
     readTime: '2 min read',
     tags: ['academic', 'publication', 'research'],
     category: 'Research',
-    component: () => import('@/components/articles/DirectedStudies.vue'),
   },
   {
     id: 'prairielearn-ranked',
@@ -47,7 +56,6 @@ export const articles: Article[] = [
     readTime: '3 min read',
     tags: ['academic', 'gamification'],
     category: 'Projects',
-    component: () => import('@/components/articles/PrairieLearnRanked.vue'),
   },
   {
     id: 'past-life-esports',
@@ -59,6 +67,10 @@ export const articles: Article[] = [
     readTime: '5 min read',
     tags: ['career', 'gaming'],
     category: 'Reflections',
-    component: () => import('@/components/articles/PastLifeEsports.vue'),
   },
 ]
+
+// Newest first, regardless of the order entries are added above
+export const articles: Article[] = [...articleList].sort((a, b) =>
+  b.dateISO.localeCompare(a.dateISO)
+)
