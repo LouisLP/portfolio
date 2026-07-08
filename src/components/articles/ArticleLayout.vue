@@ -71,9 +71,9 @@ onMounted(async () => {
                         </div>
                       </header>
 
-                      <div class="prose mb-28 mt-8 dark:prose-invert">
+                      <div class="prose dark:prose-invert mt-8 mb-28">
                         <Suspense>
-                          <div class="prose mb-28 mt-8 dark:prose-invert">
+                          <div class="prose dark:prose-invert mt-8 mb-28">
                             <component :is="articleComponent" v-if="articleComponent" />
                             <div v-else class="flex items-center justify-center py-10">
                               <span class="text-zinc-500">Loading article...</span>
