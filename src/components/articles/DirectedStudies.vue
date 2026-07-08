@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { marked } from 'marked'
+import { ref } from 'vue'
 
 import onlinePaper from '/assets/article-images/directed-studies/online-paper.png'
 import liveScoreboard from '/assets/article-images/directed-studies/live-scoreboard.png'

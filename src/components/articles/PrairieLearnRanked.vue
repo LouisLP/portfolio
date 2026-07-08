@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { marked } from 'marked'
+import { ref } from 'vue'
 
 import plrElusive100 from '/assets/article-images/prairielearn-ranked/PLR-elusive-100.png'
 import plrBurnup from '/assets/article-images/prairielearn-ranked/PLR-burnup.jpg'
