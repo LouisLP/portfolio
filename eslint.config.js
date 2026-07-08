@@ -16,6 +16,10 @@ export default defineConfigWithVueTs(
       },
     },
     rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', ignoreRestSiblings: true },
+      ],
       'import/order': [
         'error',
         {
