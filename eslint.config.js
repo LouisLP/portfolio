@@ -9,6 +9,11 @@ export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
   prettierConfig,
   {
+    // Articles render locally-authored markdown through `marked` — no user input involved
+    files: ['src/components/articles/*.vue'],
+    rules: { 'vue/no-v-html': 'off' },
+  },
+  {
     plugins: { import: importPlugin },
     settings: {
       'import/resolver': {
