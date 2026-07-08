@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { computed, markRaw, onMounted, ref } from 'vue'
+import { computed, markRaw, onMounted, ref, type Component } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { articles } from '@/config/articles'
 
 const route = useRoute()
 
-const articleComponent = ref(null)
+const articleComponent = ref<Component | null>(null)
 
 const article = computed(() => articles.find((article) => article.id === route.params.id))
 

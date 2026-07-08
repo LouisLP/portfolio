@@ -1,3 +1,5 @@
+import type { Component } from 'vue'
+
 export interface ArticleMetadata {
   id: string
   title: string
@@ -11,5 +13,5 @@ export interface ArticleMetadata {
 }
 
 export interface Article extends ArticleMetadata {
-  component: () => Promise<any>
+  component: () => Promise<{ default: Component }>
 }

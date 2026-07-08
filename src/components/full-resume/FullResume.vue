@@ -28,7 +28,7 @@ const handlePrint = () => {
 
 <template>
   <div class="fixed inset-0 z-50 overflow-y-auto">
-    <div class="fixed inset-0 bg-black/75 backdrop-blur-sm print:hidden" />
+    <div class="fixed inset-0 bg-black/75 backdrop-blur-xs print:hidden" />
     <div class="relative mx-auto max-w-5xl p-4">
       <!-- A4 Container -->
       <div class="rounded-lg bg-white p-8 dark:bg-zinc-900 dark:print:bg-white">
