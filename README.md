@@ -37,6 +37,12 @@ npm run build
 
 # Preview production build
 npm run preview
+
+# Lint (or auto-fix with lint:fix)
+npm run lint
+
+# Compress images in public/assets in place (run after adding new images)
+npm run optimize-images
 ```
 
 ## Deployment
